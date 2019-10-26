@@ -5,14 +5,14 @@ import Link from "../nextLink";
 import Time from "../time";
 
 const StyledLi = styled.li`
+    padding: 8px;
     :hover {
-        font-weight: bold;
+        text-shadow: 0 0 0.5px black;
     }
 `;
 
 const StyledLink = styled(Link)`
     text-decoration: underline;
-    font-size: small;
 `;
 
 const JournalEntry = ({ article }) => (

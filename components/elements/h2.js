@@ -5,13 +5,13 @@ const H2 = styled.h1`
     color: ${props => props.theme.text};
     font-weight: bold;
     line-height: 1.25;
-    letter-spacing: -1px;
+    letter-spacing: -0.5px;
     text-rendering: geometricPrecision;
     font-size: 1.3em;
     margin: 1.5em 0 0em;
 
     @media (min-width: 768px) {
-        font-size: 28px;
+        font-size: 1.5em;
     }
 `;
 

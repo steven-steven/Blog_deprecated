@@ -27,6 +27,8 @@ const Row = styled.div`
 
 const EngDescription = styled.p`
     font-family: ${props => props.theme.fonts.engText};
+    text-align: justify;
+    text-justify: inter-word;
     font-size: 0.9em;
 `;
 
@@ -34,7 +36,7 @@ const IndoDescription = styled.p`
     text-align: justify;
     text-justify: inter-word;
     font-family: ${props => props.theme.fonts.indoText};
-    font-size: small;
+    font-size: 0.8em;
 `;
 
 const LineThroughText = styled.span`
@@ -133,12 +135,12 @@ const Home = () => (
                 <EngDescription>
                     Email: steven.infinity29@gmail.com
                     <br />
-                    LinkedIn:&nbsp
+                    LinkedIn:&nbsp;
                     <a href="https://www.linkedin.com/in/steven-steven1999/">
                         https://www.linkedin.com/in/steven-steven1999/
                     </a>
                     <br />
-                    Github:&nbsp
+                    Github:&nbsp;
                     <a href="https://github.com/steven-steven">
                         https://github.com/steven-steven
                     </a>

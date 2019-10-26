@@ -4,14 +4,14 @@ import styled from "styled-components";
 import Link from "../nextLink";
 
 const StyledLi = styled.li`
+    padding: 8px;
     :hover {
-        text-shadow: 0 0 0.1px black;
+        text-shadow: 0 0 0.5px black;
     }
 `;
 
 const StyledLink = styled(Link)`
     text-decoration: underline;
-    font-size: small;
 `;
 
 const Description = styled.p`
@@ -25,9 +25,7 @@ const Description = styled.p`
 
 const ProjectEntry = ({ project }) => (
     <StyledLi>
-        <StyledLink slug={`project/${project.slug}`}>
-            {project.title}
-        </StyledLink>
+        <StyledLink fullHref={`${project.link}`}>{project.title}</StyledLink>
         <Description>{project.blurb}</Description>
     </StyledLi>
 );

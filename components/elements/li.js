@@ -1,8 +1,5 @@
 import styled from "styled-components";
 
-const Li = styled.li`
-    font-family: ${props => props.theme.fonts.engText};
-    font-size: 10px;
-`;
+const Li = styled.li``;
 
 export default Li;

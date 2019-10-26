@@ -39,11 +39,10 @@ const components = {
 const Main = styled.main`
     max-width: 600px;
     margin: 0 auto;
-    max-width: 600px;
     padding: 1em;
 
     @media (min-width: 768px) {
-        font-size: 18px;
+        max-width: 700px;
     }
 `;
 

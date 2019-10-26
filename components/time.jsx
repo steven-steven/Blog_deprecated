@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledTime = styled.time`
-    font-size: 0.7em;
+    font-size: 0.9em;
     margin-right: 16px;
     font-weight: lighter;
     text-transform: uppercase;

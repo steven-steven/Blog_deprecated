@@ -1,6 +1,7 @@
 import React from "react";
 
-import Projects from "../components/projects/projects";
+import Experiences from "../components/work/experiences";
+import Projects from "../components/work/projects";
 import Page from "../components/page";
 import Main from "../components/main";
 import Nav from "../components/nav";
@@ -10,6 +11,9 @@ const Index = () => (
     <Page title={"Steven - Projects"}>
         <Nav />
         <Main>
+            Experiences:
+            <Experiences />
+            Projects:
             <Projects />
         </Main>
         <Footer />

@@ -31,7 +31,7 @@ const Banner = styled.nav`
 
     > a {
         line-height: 1.25;
-        font-size: x-large;
+        font-size: 1.7em;
         font-family: Georgia;
     }
 
@@ -63,8 +63,8 @@ const Nav = () => (
             <NavLink slug="blog" aria-label="blog">
                 {"Blog"}
             </NavLink>
-            <NavLink slug="project" aria-label="blog">
-                {"Projects"}
+            <NavLink slug="work" aria-label="work">
+                {"Works"}
             </NavLink>
         </MenuBar>
     </Row>
