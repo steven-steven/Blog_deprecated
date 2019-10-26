@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 
 const H3 = styled.h1`
@@ -6,13 +7,17 @@ const H3 = styled.h1`
     line-height: 1.25;
     letter-spacing: -1px;
     text-rendering: geometricPrecision;
-    font-size: 20px;
-    margin: 2em 0 1em;
+    font-size: 16px;
+    margin: 1em 0 0em;
     line-height: 1.25;
 
     @media (min-width: 768px) {
-        font-size: 24px;
+        font-size: 18px;
     }
 `;
 
-export default H3;
+const createId = text => text.toLowerCase().replace(/ /g, "-");
+
+const TaggedH3 = ({ children }) => <H3 id={createId(children)}>{children}</H3>;
+
+export default TaggedH3;

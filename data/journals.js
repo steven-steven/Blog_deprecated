@@ -1,12 +1,12 @@
 export default [
     {
-        date: 'October 6, 2019',
-        slug: 'test',
-        title: 'My first MDX post'
+        date: "October 20, 2019",
+        slug: "code-brakedown-maze-generator",
+        title: "Code Breakdown - Maze Generator"
     },
     {
-        date: 'October 6, 2019',
-        slug: 'test2',
-        title: 'My second MDX post'
+        date: "October 14, 2019",
+        slug: "creating-this-site",
+        title: "First Blog Post - Creating this site"
     }
 ];

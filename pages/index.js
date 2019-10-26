@@ -62,7 +62,7 @@ const AnimatedWord = styled.span`
             content: "BASKETBALL";
         }
         40% {
-            content: "WASTING TIME";
+            content: "SHOUNEN MANGA";
         }
         50% {
             content: "THE ENVIRONMENT";
@@ -74,13 +74,13 @@ const AnimatedWord = styled.span`
             content: "YOU";
         }
         80% {
-            content: "REACT";
+            content: "BEING MYSELF";
         }
         90% {
-            content: "SILENCE";
+            content: "LISTENING TO MUSIC";
         }
         100% {
-            content: "MEOW";
+            content: "TO CHILL";
         }
     }
 `;
@@ -133,12 +133,12 @@ const Home = () => (
                 <EngDescription>
                     Email: steven.infinity29@gmail.com
                     <br />
-                    LinkedIn:{" "}
+                    LinkedIn:&nbsp
                     <a href="https://www.linkedin.com/in/steven-steven1999/">
                         https://www.linkedin.com/in/steven-steven1999/
                     </a>
                     <br />
-                    Github:{" "}
+                    Github:&nbsp
                     <a href="https://github.com/steven-steven">
                         https://github.com/steven-steven
                     </a>

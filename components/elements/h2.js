@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 
 const H2 = styled.h1`
@@ -6,13 +7,16 @@ const H2 = styled.h1`
     line-height: 1.25;
     letter-spacing: -1px;
     text-rendering: geometricPrecision;
-    font-size: 1.4em;
-    margin: 2em 0 1em;
-    line-height: 1.25;
+    font-size: 1.3em;
+    margin: 1.5em 0 0em;
 
     @media (min-width: 768px) {
-        font-size: 36px;
+        font-size: 28px;
     }
 `;
 
-export default H2;
+const createId = text => text.toLowerCase().replace(/ /g, "-");
+
+const TaggedH2 = ({ children }) => <H2 id={createId(children)}>{children}</H2>;
+
+export default TaggedH2;

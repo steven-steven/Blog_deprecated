@@ -22,9 +22,11 @@ export default ({ children }) => {
                     style={{ ...style, padding: "20px", fontSize: "0.7em" }}
                 >
                     {tokens.map((line, i) => (
+                        // eslint-disable-next-line react/no-array-index-key
                         <div key={i} {...getLineProps({ line, key: i })}>
                             {line.map((token, key) => (
                                 <span
+                                    // eslint-disable-next-line react/no-array-index-key
                                     key={key}
                                     {...getTokenProps({ token, key })}
                                 />

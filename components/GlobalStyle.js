@@ -9,6 +9,9 @@ const GlobalStyle = createGlobalStyle`
         line-height: 1.65;
         text-rendering: optimizeLegibility;
     }
+    html {
+        scroll-behavior: smooth;
+    }
 `;
 
 export default GlobalStyle;

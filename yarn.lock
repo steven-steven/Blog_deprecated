@@ -3890,6 +3890,11 @@ lodash.templatesettings@^4.0.0:
   dependencies:
     lodash._reinterpolate "^3.0.0"
 
+lodash.toarray@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/lodash.toarray/-/lodash.toarray-4.4.0.tgz#24c4bfcd6b2fba38bfd0594db1179d8e9b656561"
+  integrity sha1-JMS/zWsvuji/0FlNsRedjptlZWE=
+
 lodash.uniq@4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
@@ -4339,6 +4344,13 @@ nice-try@^1.0.4:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
   integrity sha512-1nh45deeb5olNY7eX82BkPO7SSxR5SSYJiPTrTdFUVYwAl8CKMA5N9PjTYkHiRjisVcxcQ1HXdLhx2qxxJzLNQ==
+
+node-emoji@^1.8.1:
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/node-emoji/-/node-emoji-1.10.0.tgz#8886abd25d9c7bb61802a658523d1f8d2a89b2da"
+  integrity sha512-Yt3384If5H6BYGVHiHwTL+99OzJKHhgp82S8/dktEK73T26BazdgZ4JZh92xSVtGNJvz9UbXdNAc5hcrXV42vw==
+  dependencies:
+    lodash.toarray "^4.4.0"
 
 node-fetch@2.6.0:
   version "2.6.0"
@@ -5585,6 +5597,14 @@ regjsparser@^0.6.0:
   dependencies:
     jsesc "~0.5.0"
 
+remark-emoji@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/remark-emoji/-/remark-emoji-2.0.2.tgz#49c134021132c192ee4cceed1988ec9b8ced7eb8"
+  integrity sha512-E8ZOa7Sx1YS9ivWJ8U9xpA8ldzZ4VPAfyUaKqhr1/Pr5Q8ZdQHrpDg6S+rPzMw8t89KNViB/oG9ZdJSFDrUXpA==
+  dependencies:
+    node-emoji "^1.8.1"
+    unist-util-visit "^1.4.0"
+
 remark-mdx@^1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/remark-mdx/-/remark-mdx-1.5.0.tgz#780541b0455ab7432dbb8501be32aa7734b1f441"
@@ -6599,7 +6619,7 @@ unist-util-visit@2.0.0:
     unist-util-is "^4.0.0"
     unist-util-visit-parents "^3.0.0"
 
-unist-util-visit@^1.0.0, unist-util-visit@^1.1.0:
+unist-util-visit@^1.0.0, unist-util-visit@^1.1.0, unist-util-visit@^1.4.0:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/unist-util-visit/-/unist-util-visit-1.4.1.tgz#4724aaa8486e6ee6e26d7ff3c8685960d560b1e3"
   integrity sha512-AvGNk7Bb//EmJZyhtRUnNMEpId/AZ5Ph/KUpTI09WHQuDZHKovQ1oEv3mfmKpWKtoMzyMC4GLBm1Zy5k12fjIw==
