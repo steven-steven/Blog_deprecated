@@ -26,7 +26,7 @@ const Row = styled.div`
 `;
 
 const EngDescription = styled.p`
-    font-family: ${props => props.theme.fonts.engText};
+    font-family: ${(props) => props.theme.fonts.engText};
     text-align: justify;
     text-justify: inter-word;
     font-size: 0.9em;
@@ -35,7 +35,7 @@ const EngDescription = styled.p`
 const IndoDescription = styled.p`
     text-align: justify;
     text-justify: inter-word;
-    font-family: ${props => props.theme.fonts.indoText};
+    font-family: ${(props) => props.theme.fonts.indoText};
     font-size: 0.8em;
 `;
 
@@ -105,30 +105,33 @@ const Home = () => (
                 <EngDescription>
                     Hi My name is Steven. I grew up in Indonesia, and moved into
                     Canada to study Computer Engineering at University of
-                    Waterloo. In today&apos;s age where the world runs on code,
-                    I always feel challenged to innovate, learn, and share.
+                    Waterloo.
                     <br />
                     This site is about me, about my experiences, about my
                     thoughts, about the world around me, and about everything I
                     feel like sharing.
                     <br />
-                    Hit me up. Always happy to get a
+                    <br />
+                    I don&apos;t have a cat but I hope this blog will still be
+                    interesting to you.
+                    <br />
+                    Hit me up. Always happy to get a &nbsp;
                     <LineThroughText> coffee </LineThroughText>
-                    bubble tea anytime.
+                    &nbsp; bubble tea anytime.
                 </EngDescription>
                 <IndoDescription>
-                    Nama lengkap, Steven. Gw lahir dan dibesarkan di Indonesia,
-                    dan pada saat lulus SMA gw terbang ke Kanada untuk mengambil
-                    jurusan Computer Engineering di University of Waterloo.
-                    Tidak lama setelah menduduki tahun pertama, gw langsung
-                    terjun ke dunia yang tak pernah kuketahui. Dalam masa dimana
-                    dunia terkendali oleh kode, gw tertantang untuk terus
-                    berkreasi, belajar, dan berbagi.
+                    Nama lengkap, Steven. Saya lahir dan dibesarkan di
+                    Indonesia, dan pada saat lulus SMA saya terbang ke Kanada
+                    untuk mengambil jurusan Computer Engineering di University
+                    of Waterloo.
                     <br />
-                    Situs ini tentang gw, tentang pengalaman gw, tentang
-                    pemikiran gw, tentang dunia disekitar gw, dan tentang apa
-                    saja yang ingin kubagi. Kontek2an aja. Gw akan selalu
-                    bersedia untuk berbincang.
+                    Ketertarikan saya untuk berkreasi, belajar, dan berbagi
+                    mendorong saya untuk membuat blog ini.
+                    <br />
+                    <br />
+                    Gua sih gk punya kucing peliharaan, tapi gua harap blog ini
+                    tetap akan menarik bagi siapapun yang membacanya. Jangan
+                    lupa komen like sapskribe :)
                 </IndoDescription>
                 <hr />
                 <h3>Contact Me</h3>

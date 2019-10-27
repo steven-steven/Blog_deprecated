@@ -1,7 +1,7 @@
 import React from "react";
 
 import Experiences from "../components/work/experiences";
-import Projects from "../components/work/projects";
+// import Projects from "../components/work/projects";
 import Page from "../components/page";
 import Main from "../components/main";
 import Nav from "../components/nav";
@@ -13,8 +13,8 @@ const Index = () => (
         <Main>
             Experiences:
             <Experiences />
-            Projects:
-            <Projects />
+            {/* Projects:
+            <Projects /> */}
         </Main>
         <Footer />
     </Page>

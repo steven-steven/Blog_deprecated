@@ -15,7 +15,6 @@ const Page = ({ children, title = "Steven" }) => {
                     content="width=device-width, initial-scale=1"
                     name="viewport"
                 />
-                <link href="/styles/react-sticky-header.css" rel="stylesheet" />
             </Head>
             <GlobalStyle />
             {children}

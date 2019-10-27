@@ -2,12 +2,12 @@ import React from "react";
 import styled from "styled-components";
 
 const H1 = styled.h1`
-    color: ${props => props.theme.text};
+    color: ${(props) => props.theme.text};
     font-weight: bold;
     line-height: 1.25;
     letter-spacing: -1px;
     text-rendering: geometricPrecision;
-    font-size: 1.5em;
+    font-size: 1.8em;
     margin-bottom: 0;
     line-height: 1.35;
 
@@ -16,7 +16,7 @@ const H1 = styled.h1`
     }
 `;
 
-const createId = text => text.toLowerCase().replace(/ /g, "-");
+const createId = (text) => text.toLowerCase().replace(/ /g, "-");
 
 const TaggedH1 = ({ children }) => <H1 id={createId(children)}>{children}</H1>;
 
