@@ -1,9 +1,9 @@
-import React from "react";
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
 
-import A from "./elements/a";
+import A from './elements/a';
 
-const CustomLink = ({ slug = "", fullHref, children, className }) => {
+const CustomLink = ({ slug = '', fullHref, children, className }) => {
     const href = `/${slug}`;
 
     return fullHref ? (

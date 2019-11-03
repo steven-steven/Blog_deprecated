@@ -1,8 +1,13 @@
 export default [
     {
         date: "October 27, 2019",
-        slug: "two-weeks-of-rock-climbing",
-        title: "Two Weeks of Rock Climbing"
+        slug: "no-last-name",
+        title: "No Last Name"
+    },
+    {
+        date: "October 27, 2019",
+        slug: "two-weeks-of-rock-climbing-yet-still-too-weak",
+        title: "Two Weeks of Rock Climbing, Yet Still Too Weak"
     },
     {
         date: "October 20, 2019",

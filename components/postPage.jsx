@@ -1,24 +1,25 @@
-import React from "react";
-import styled from "styled-components";
-import { MDXProvider } from "@mdx-js/react";
+import React from 'react';
+import styled from 'styled-components';
+import { MDXProvider } from '@mdx-js/react';
 
-import Footer from "./footer";
-import Nav from "./nav";
-import Page from "./page";
+import Footer from './footer';
+import Nav from './nav';
+import Page from './page';
+import Commento from './commento';
 
-import P from "./elements/p";
-import A from "./elements/a";
-import Blockquote from "./elements/blockquote";
-import Code from "./elements/code";
-import Em from "./elements/em";
-import H1 from "./elements/h1";
-import H2 from "./elements/h2";
-import H3 from "./elements/h3";
-import Img from "./elements/img";
-import Li from "./elements/li";
-import Ol from "./elements/ol";
-import Strong from "./elements/strong";
-import Ul from "./elements/ul";
+import P from './elements/p';
+import A from './elements/a';
+import Blockquote from './elements/blockquote';
+import Code from './elements/code';
+import Em from './elements/em';
+import H1 from './elements/h1';
+import H2 from './elements/h2';
+import H3 from './elements/h3';
+import Img from './elements/img';
+import Li from './elements/li';
+import Ol from './elements/ol';
+import Strong from './elements/strong';
+import Ul from './elements/ul';
 
 const components = {
     a: A,
@@ -53,6 +54,7 @@ const Post = ({ children, meta }) => (
             <MDXProvider components={components}>
                 <article>{children}</article>
             </MDXProvider>
+            <Commento />
         </Main>
         <Footer />
     </Page>

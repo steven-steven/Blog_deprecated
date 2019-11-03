@@ -5,7 +5,7 @@ import Canvas from "../../components/elements/canvas";
 import Head from "next/head";
 
 export const meta = {
-    date: "2019-10-19",
+    date: "2019-10-20",
     title: "First Blog Post - Creating This Site"
 };
 
@@ -34,7 +34,6 @@ In this post I will breakdown one of Mike's maze generator visuals - "Randomized
 <center>
     <Canvas id="originalMaze"></Canvas>
 </center>
-
 
 I enjoyed reading this algorithm. It's like analyzing poetry; takes a while until it clicks. And like any poetry, there's a lot of freedom in expressing the work, so it was also interesting to see the implementation approach chosen by the writer. Anyhow that's my motivation; and although this post is long, I hope you would enjoy it.
 
@@ -153,7 +152,7 @@ context.translate(
 Here we define `width` and `height` of the canvas, the direction values, the `cellSize` and `cellSpacing`, the `cells[]`, and the `frontier[]` like discussed earlier. `cellWidth` is the number of columns in the maze while `cellHeight` is the number of rows (I don't understand why its named that way).
 
 Then it create a `<canvas>` within the body, and get a reference to the 2d context of the canvas. This context is your tools/paint-brush you use to draw things onto the canvas.
-We then translate/move the context to the middle of the canvas. Translating the context simply moves the coordinate system so now (0,0) is shifted by a few pixels. 
+We then translate/move the context to the middle of the canvas. Translating the context simply moves the coordinate system so now (0,0) is shifted by a few pixels.
 
 Note that the number of spacing is one more than the number of cells in a row or column. For example, picture a 7x7 maze. The number of cell rows is 7 while the number of spacing rows is 8.
 
@@ -334,7 +333,7 @@ else if (d0 === W) fillEast(i1), (x1 = x0 - 1), (y1 = y0), (d1 = E);
 else fillEast(i0), (x1 = x0 + 1), (y1 = y0), (d1 = W);
 ```
 
-- This section colors the spacing between the parent cell to cell at i1. Based on whether i1 is an open/valid path, it would color the spacing either black/white.
+-   This section colors the spacing between the parent cell to cell at i1. Based on whether i1 is an open/valid path, it would color the spacing either black/white.
 
 ```javascript
 //fill cell and fill magenta fontier (if open)
@@ -387,7 +386,7 @@ I'm not undermining the difficulty of D3 because I have little clue at this poin
 
 I spent a lot of time trying to figure out how to display D3 and Canvas on this next-MDX post. I used a simple `<script>` tag to load the code but it only works on SSR.
 
-If you load this page with Next/Link I think it would bundle things and the page wouldn't recognize the D3 code imported from the `<script>` tag. 
+If you load this page with Next/Link I think it would bundle things and the page wouldn't recognize the D3 code imported from the `<script>` tag.
 
 I wish there was a better way to import this client-side js asset and have it run with Next. But at this point Next's prefetching, window.onLoad(), and bundling is still all alien :alien: to me.
 
