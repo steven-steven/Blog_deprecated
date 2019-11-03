@@ -1,10 +1,10 @@
-import Head from "next/head";
-import React from "react";
+import Head from 'next/head';
+import React from 'react';
 
-import GlobalStyle from "./GlobalStyle";
+import GlobalStyle from './GlobalStyle';
 
 // TODO: fill in meta-tags, domain name and current path, description, imag, google analytics..
-const Page = ({ children, title = "Steven" }) => {
+const Page = ({ children, title = 'Steven' }) => {
     return (
         <>
             <Head>

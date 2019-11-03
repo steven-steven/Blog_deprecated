@@ -1,11 +1,11 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import Page from "../components/page";
-import Nav from "../components/nav";
-import Main from "../components/main";
-import Footer from "../components/footer";
-import Avatar from "../components/avatar";
+import Page from '../components/page';
+import Nav from '../components/nav';
+import Main from '../components/main';
+import Footer from '../components/footer';
+import Avatar from '../components/avatar';
 
 const StyledAvatar = styled(Avatar)`
     height: 80px;
@@ -47,53 +47,53 @@ const AnimatedWord = styled.span`
     color: white;
     background-color: black;
     ::after {
-        content: "";
+        content: '';
         animation: spin 10s linear infinite;
     }
     @keyframes spin {
         0% {
-            content: "PROGRAMMING";
+            content: 'PROGRAMMING';
         }
         10% {
-            content: "LEARNING";
+            content: 'LEARNING';
         }
         20% {
-            content: "TABLE TENNIS";
+            content: 'TABLE TENNIS';
         }
         30% {
-            content: "BASKETBALL";
+            content: 'BASKETBALL';
         }
         40% {
-            content: "SHOUNEN MANGA";
+            content: 'SHOUNEN MANGA';
         }
         50% {
-            content: "THE ENVIRONMENT";
+            content: 'THE ENVIRONMENT';
         }
         60% {
-            content: "RUNNING";
+            content: 'RUNNING';
         }
         70% {
-            content: "YOU";
+            content: 'YOU';
         }
         80% {
-            content: "BEING MYSELF";
+            content: 'BEING MYSELF';
         }
         90% {
-            content: "LISTENING TO MUSIC";
+            content: 'LISTENING TO MUSIC';
         }
         100% {
-            content: "TO CHILL";
+            content: 'TO CHILL';
         }
     }
 `;
 
 const Home = () => (
-    <Page title={"Steven - my current iteration"}>
+    <Page title={'Steven - my current iteration'}>
         <Nav />
         <Main>
             <Content>
                 <Row>
-                    <StyledAvatar slug={"avatar_hello.png"} />
+                    <StyledAvatar slug={'avatar_hello.png'} />
                     <p>
                         &nbsp;I LOVE&nbsp;
                         <AnimatedWord />
@@ -107,15 +107,12 @@ const Home = () => (
                     Canada to study Computer Engineering at University of
                     Waterloo.
                     <br />
-                    This site is about me, about my experiences, about my
-                    thoughts, about the world around me, and about everything I
-                    feel like sharing.
+                    This site is about my reflection, experiences, thoughts, and
+                    the world around me. I don&apos;t have a cat but I hope this
+                    blog will still be interesting to you.
                     <br />
-                    <br />
-                    I don&apos;t have a cat but I hope this blog will still be
-                    interesting to you.
-                    <br />
-                    Hit me up. Always happy to get a &nbsp;
+                    Hit me up with any random thoughts. Always happy to get a
+                    &nbsp;
                     <LineThroughText> coffee </LineThroughText>
                     &nbsp; bubble tea anytime.
                 </EngDescription>
