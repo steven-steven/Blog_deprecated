@@ -1,5 +1,10 @@
 export default [
     {
+        date: 'November 11, 2019',
+        slug: 'debug-how-nextjs-works-with-redux',
+        title: 'Debug how Next.js works with Redux'
+    },
+    {
         date: 'November 03, 2019',
         slug: 'no-last-name',
         title: 'No Last Name'
