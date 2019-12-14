@@ -73,10 +73,10 @@ const AnimatedWord = styled.span`
             content: 'RUNNING';
         }
         70% {
-            content: 'YOU';
+            content: 'YOU!';
         }
         80% {
-            content: 'BEING MYSELF';
+            content: 'PROBLEM SOLVING';
         }
         90% {
             content: 'LISTENING TO MUSIC';
@@ -108,7 +108,7 @@ const Home = () => (
                     Waterloo.
                     <br />
                     This site is about my reflection, experiences, thoughts, and
-                    the world around me. I don&apos;t have a cat but I hope this
+                    the world around me. I don&apos;t have a cat to talk about, but I hope this
                     blog will still be interesting to you.
                     <br />
                     Hit me up with any random thoughts. Always happy to get a
