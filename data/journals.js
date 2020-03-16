@@ -1,9 +1,17 @@
-export default [
+export default {
+  2020: [
     {
-        date: 'February 25, 2019',
+        date: 'March 12, 2020',
+        slug: 'indexing-with-spatial-search-algorithm',
+        title: 'Indexing with Spatial Search Algorithm'
+    },
+    {
+        date: 'February 25, 2020',
         slug: 'discovering-notion',
         title: 'Discovering Notion'
-    },
+    }
+  ],
+  2019: [
     {
         date: 'December 27, 2019',
         slug: 'learning-okr',
@@ -39,4 +47,5 @@ export default [
         slug: 'creating-this-site',
         title: 'First Blog Post - Creating this site'
     }
-];
+  ]
+};
