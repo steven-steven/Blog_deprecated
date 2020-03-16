@@ -1,5 +1,15 @@
 export default [
     {
+        date: 'February 25, 2019',
+        slug: 'discovering-notion',
+        title: 'Discovering Notion'
+    },
+    {
+        date: 'December 27, 2019',
+        slug: 'learning-okr',
+        title: 'Learning OKR'
+    },
+    {
         date: 'December 26, 2019',
         slug: 'a-retrospective-of-my-4-months-sprint-at-Loblaw-Digital',
         title: 'A Retrospective of my 4 months sprint at Loblaw Digital'
