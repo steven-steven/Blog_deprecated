@@ -9,7 +9,6 @@ const Page = ({ children, title = 'Steven' }) => {
         <>
             <Head>
                 <title>{title}</title>
-                <base target="_blank" />
                 <meta charSet="utf-8" />
                 <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
                 <meta
