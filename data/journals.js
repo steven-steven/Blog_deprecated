@@ -1,6 +1,11 @@
 export default {
     2020: [
         {
+            date: 'May 26, 2020',
+            slug: 'mental-health-month',
+            title: 'Mental Health Month'
+        },
+        {
             date: 'April 22, 2020',
             slug: 'when-the-storm-ends',
             title: 'When The Storm Ends (a 3B term recap)'
