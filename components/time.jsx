@@ -10,7 +10,7 @@ const StyledTime = styled.time`
 `;
 
 const CustomTime = ({ children }) => {
-    const date = new Date(`${children} 00:00`);
+    const date = new Date(`${children}`.replace(/-/g, '\/'));
     const displayDate = date.toDateString();
 
     return <StyledTime dateTime={date.toISOString()}>{displayDate}</StyledTime>;
