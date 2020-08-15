@@ -2,6 +2,12 @@ export default {
     2020: [
         {
             date: 'Aug 08, 2020',
+            slug: '4a-term-recap',
+            tags: ['eng', 'tech', 'reflection'],
+            title: 'Five courses in Four months (a 4A term Recap)'
+        },
+        {
+            date: 'Aug 08, 2020',
             slug: 'nkcthi',
             tags: ['indo', 'nontech'],
             title: 'Nanti Kita Cerita Tentang Hari Ini - Review'
