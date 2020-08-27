@@ -1,6 +1,12 @@
 export default {
     2020: [
         {
+            date: 'Aug 26, 2020',
+            slug: 'creating-an-invoice-app-with-electron-and-go',
+            tags: ['eng', 'tech', 'reflection'],
+            title: 'Creating an Invoice App with Electron and Go'
+        },
+        {
             date: 'Aug 15, 2020',
             slug: '4a-term-recap',
             tags: ['eng', 'tech', 'reflection'],
