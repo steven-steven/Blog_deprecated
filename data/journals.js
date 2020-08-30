@@ -44,36 +44,36 @@ export default {
         }
     ],
     2019: [
-        {
-            date: 'December 27, 2019',
-            slug: 'learning-okr',
-            tags: ['eng', 'nontech'],
-            title: 'Learning OKR'
-        },
+//         {
+//             date: 'December 27, 2019',
+//             slug: 'learning-okr',
+//             tags: ['eng', 'nontech'],
+//             title: 'Learning OKR'
+//         },
         {
             date: 'December 26, 2019',
             slug: 'a-retrospective-of-my-4-months-sprint-at-Loblaw-Digital',
             tags: ['eng', 'tech', 'reflection'],
             title: 'A Retrospective of my 4 months sprint at Loblaw Digital'
         },
-        {
-            date: 'November 11, 2019',
-            slug: 'debug-how-nextjs-works-with-redux',
-            tags: ['eng', 'tech'],
-            title: 'Debug how Next.js works with Redux'
-        },
+//         {
+//             date: 'November 11, 2019',
+//             slug: 'debug-how-nextjs-works-with-redux',
+//             tags: ['eng', 'tech'],
+//             title: 'Debug how Next.js works with Redux'
+//         },
         {
             date: 'November 03, 2019',
             slug: 'no-last-name',
             tags: ['eng', 'nontech', 'reflection'],
             title: 'No Last Name'
         },
-        {
-            date: 'October 20, 2019',
-            slug: 'code-brakedown-maze-generator',
-            tags: ['eng', 'tech'],
-            title: 'Code Breakdown - Maze Generator'
-        },
+//         {
+//             date: 'October 20, 2019',
+//             slug: 'code-brakedown-maze-generator',
+//             tags: ['eng', 'tech'],
+//             title: 'Code Breakdown - Maze Generator'
+//         },
         {
             date: 'October 14, 2019',
             slug: 'creating-this-site',
