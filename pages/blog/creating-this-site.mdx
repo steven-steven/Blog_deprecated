@@ -12,7 +12,7 @@ export default ({ children }) => <Post meta={meta}>{children}</Post>;
 
 <Time>{meta.date}</Time>
 
-I've probably created too much web portfolios in my life, and I wish I could settle on a simple site that reflects who I am - Not to simply impress anyone or show off my experiences. So I'd like to rebrand my site - not as a portfolio, but as a blog. I won't be selling myself (you can see them on my LinkedIn), but to share what matters most as a learner - reflection.
+I've probably created too much web portfolios in my life, and I wish I could settle on a simple site that reflects who I am. But I'm a man that adapts and changes as I grow. So I'd like to rebrand my site - not as a portfolio, but as a blog. I'd like to share what matters most as a learner - reflection.
 
 As a first blog post, I'll start off with reflecting how I created this site. Note that I will probably change/add some more things in the future, so this really is essentially just a first-draft.
 
@@ -36,8 +36,7 @@ As a first blog post, I'll start off with reflecting how I created this site. No
 
 ## Inspiration and Credits
 
-Thing is, I felt like I didn't create this. I simply grab and put things together, because why would you re-invent the wheel? Just about every tool I need to build a website is already out there (Isn't that what programming is?).
-But I feel like I had a huge debt towards https://leerob.io and https://yihui.name. Give it a look and hopefully it will inspire you like it did for me. When I saw Lee's site and his implementation of next-mdx, I knew I had to try it. He had his site open-sourced on Github too so I am very grateful for that. On the other hand, Yihui's site inspires me of its simplicity in design and high-grade in content. Truly amazing.
+This blog is inspired by https://leerob.io and [https://yihui.name](https://yihui.name). Give it a look and hopefully it will inspire you like it did for me. When I saw Lee's site and his implementation of next-mdx, I knew I had to try it. At the same time, Yihui's site inspires me of its simplicity in design and high-grade in content. Truly amazing.
 
 Not to mention all the great JS libraries I used, which really simplify lots of the work needed. (Reminds me of the time I made a purely static site without a JS framework :confounded: Glad that generation is long gone). Below is a few that had helped me!
 
@@ -55,7 +54,7 @@ This is my first time using Yarn. It's a package manager just like NPM (I heard 
 
 My experiences with CSS is very bittersweet (Mostly bitter). I went over LeeRob's implementation of his site, and I realized that styled-component really made everything super neat, so I gave it a try and I loved it. It provide great features like theming, and it seems much more intuitive than other CSS-in-JS I've used since it defines the styles outside the JSX.
 
-I tried looking into CSS Component Libraries to see if I can avoid too much CSS. I've used Material UI before and it was pretty heavy. Rebass was lightweight but it defines the CSS as a prop to the JSX components (which I think is ugly compared to styled-components since the JSX code can get pretty crowded). I couldn't find a framework that works with styled-components, I eventually gave up and went for the DIY route. :hammer:
+I tried looking into CSS Component Libraries to see if I can avoid too much CSS. I've used Material UI before and it was pretty heavy. Rebass was lightweight but it defines the CSS as a prop to the JSX components (which I think is ugly compared to styled-components since the JSX code can get pretty crowded). __ Update from Sept 2020: __ I love [Tailwind](https://tailwindcss.com/)!
 
 ### Navbar
 
@@ -105,4 +104,4 @@ I also had extention for Prettier. I defined `"prettier.tabWidth": 4` so it woul
 -   Provide Indonesian translation (so I can practice my Indo writing skills too).
 -   Provide metadata to improve SEO
 -   Implement tags to categorize my posts
--   Comment section (so I can allow people to roast me)
+-   Comment section

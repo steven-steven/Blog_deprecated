@@ -20,6 +20,7 @@
         "react": "16.10.2",
         "react-dom": "16.10.2",
         "react-select": "^3.1.0",
+        "react-text-loop": "^2.3.0",
         "remark-emoji": "^2.0.2",
         "styled-components": "^4.4.0"
     },

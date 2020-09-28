@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import TextLoop from "react-text-loop";
 
 import Page from '../components/page';
 import Nav from '../components/nav';
@@ -39,53 +40,7 @@ const IndoDescription = styled.p`
     font-size: 0.8em;
 `;
 
-const LineThroughText = styled.span`
-    text-decoration: line-through;
-`;
-
-const AnimatedWord = styled.span`
-    color: white;
-    background-color: black;
-    ::after {
-        content: '';
-        animation: spin 10s linear infinite;
-    }
-    @keyframes spin {
-        0% {
-            content: 'PROGRAMMING';
-        }
-        10% {
-            content: 'LEARNING';
-        }
-        20% {
-            content: 'TABLE TENNIS';
-        }
-        30% {
-            content: 'BASKETBALL';
-        }
-        40% {
-            content: 'SHOUNEN MANGA';
-        }
-        50% {
-            content: 'THE ENVIRONMENT';
-        }
-        60% {
-            content: 'RUNNING';
-        }
-        70% {
-            content: 'YOU!';
-        }
-        80% {
-            content: 'PROBLEM SOLVING';
-        }
-        90% {
-            content: 'LISTENING TO MUSIC';
-        }
-        100% {
-            content: 'TO CHILL';
-        }
-    }
-`;
+const loopTexts = ["PROGRAMMING", "TABLE TENNIS", "BASKETBALL", "MANGA", "UKULELE", "DRAWING", "PROBLEM SOLVING", "LEARNING", "SHARING"]
 
 const Home = () => (
     <Page title={'Steven - my current iteration'}>
@@ -95,40 +50,36 @@ const Home = () => (
                 <Row>
                     <StyledAvatar slug={'avatar_hello.png'} />
                     <p>
-                        &nbsp;I LOVE&nbsp;
-                        <AnimatedWord />
+                        &nbsp;I ENJOY&nbsp;
+                        {/* eslint-disable-next-line react/no-children-prop */}
+                        <TextLoop children={loopTexts} interval={2000} springConfig={{ stiffness: 70, damping: 20 }} />
                         &nbsp;
                     </p>
                 </Row>
                 <hr />
                 <h3>About</h3>
                 <EngDescription>
-                    Hi My name is Steven. I grew up in Indonesia, and moved into
-                    Canada to study Computer Engineering at University of
-                    Waterloo.
+                    Hi I am Steven.
+
+                    I study Computer Engineering at the University of Waterloo. Having been through 6 internships in the tech industry, I felt like a programming career has always been something I&apos;d enjoy pursuing.
+                    However, now that I&apos;m about to graduate in the upcoming 2021, it&apos;s beginning to feel surreal. What will I be in 5 years time?
                     <br />
-                    This site is about my reflection, experiences, thoughts, and
-                    the world around me. I don&apos;t have a cat to talk about, but I hope this
-                    blog will still be interesting to you.
+                    This site a reflection of the experiences and thoughts of the world around me. I&apos;m a man with many flaws. 
+                    One of them I believe is being not too good of a writer. I think this blog will help me overcome that as I continue to write and write and write. Hopefully it gets better over time.
+                    Regardless, I enjoy writing.
                     <br />
-                    Hit me up with any random thoughts. Always happy to get a
-                    &nbsp;
-                    <LineThroughText> coffee </LineThroughText>
-                    &nbsp; bubble tea anytime.
+                    I'm not entirely sure what this blog means to you reading it. It could just end up being a bunch of ramblings of insignificant brain-farts. But I hope you can get something positive out of it.
                 </EngDescription>
+                <hr />
                 <IndoDescription>
-                    Nama lengkap, Steven. Saya lahir dan dibesarkan di
-                    Indonesia, dan pada saat lulus SMA saya terbang ke Kanada
-                    untuk mengambil jurusan Computer Engineering di University
-                    of Waterloo.
+                    <h3>Tentang Blog ini</h3>
+                    Jujur sehabis 5 tahun sekolah di Kanada, mindset untuk berbicara ataupun menulis dalam Bahasa Indonesia mulai dikabuti oleh interaksi sehari-hari yang 90% berbahasa Inggris. 
+                    Bukannya lupa, namun mungking terkadang sulit untuk menstrukturkan kalimat yang benar dan lancar.
+                    Bahkan lebih parahnya lagi, mungkin setelah pulang ke Indonesia nantinya, saya tidak akan lagi dianggap anak millenial yang GAUL, apapun itu artinya.
                     <br />
-                    Ketertarikan saya untuk berkreasi, belajar, dan berbagi
-                    mendorong saya untuk membuat blog ini.
+                    Sebagai seorang programmer sekaligus manusia yang amat sangat amatir, saya senang untuk terus berkreasi dan belajar hal baru setiap harinya. Pengalaman-pengalaman ini lah yang ingin kutuangkan dalam blog ini, dan saya berharap akan membawa dampak yang positif kepada siapapun itu pembacanya.
                     <br />
-                    <br />
-                    Gua sih gk punya kucing peliharaan, tapi gua harap blog ini
-                    tetap akan menarik bagi siapapun yang membacanya. Jangan
-                    lupa komen like sapskribe :)
+                    Terlebih lagi, sekalian blog ini akan dijadikan platform dimana saya terus latihan untuk menulis.
                 </IndoDescription>
                 <hr />
                 <h3>Contact Me</h3>

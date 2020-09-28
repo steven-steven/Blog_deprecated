@@ -11,7 +11,6 @@ import tagOptions from "../data/tagOptions";
 const customStyles = {
     control: (base, state) => ({
       ...base,
-      height: '35px',
       'min-height': '35px',
     }),
 };
