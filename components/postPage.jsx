@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import { MDXProvider } from '@mdx-js/react';
+import { withRouter } from 'next/router'
 
 import Footer from './footer';
 import Nav from './nav';
 import Page from './page';
-import Commento from './commento';
+import { DiscussionEmbed } from 'disqus-react';
 
 import P from './elements/p';
 import A from './elements/a';
@@ -48,17 +49,28 @@ const Main = styled.main`
     }
 `;
 
-const Post = ({ children, meta }) => (
+const Post = ({ children, meta, router }) => (
     <Page title={`${meta.title} - Steven`}>
         <Nav />
         <Main>
             <MDXProvider components={components}>
                 <article>{children}</article>
             </MDXProvider>
-            <Commento />
+            <br/>
+            <hr/>
+            <DiscussionEmbed
+                shortname='blog-zlm7tpahgt'
+                config={
+                    {
+                        url: 'https://stevenwhat.me' + router.pathname,
+                        identifier: router.pathname.substring(router.pathname.lastIndexOf('/') + 1),
+                        title: meta.title,
+                    }
+                }
+            />                 
         </Main>
         <Footer />
     </Page>
 );
 
-export default Post;
+export default withRouter(Post);
