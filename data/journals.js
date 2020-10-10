@@ -1,6 +1,12 @@
 export default {
     2020: [
         {
+            date: 'Sept 25, 2020',
+            slug: 'oscillating-in-that-grey-area-we-call-life',
+            tags: ['eng', 'nontech', 'reflection'],
+            title: 'Oscillating in that grey area we call life'
+        },
+        {
             date: 'Aug 26, 2020',
             slug: 'creating-an-invoice-app-with-electron-and-go',
             tags: ['eng', 'tech', 'reflection'],

@@ -1,9 +1,21 @@
 export default [
     {
+        slug: "Stackadapt",
+        company: "StackAdapt",
+        title: "Software Engineer Intern",
+        date: "Current"
+    },
+    {
+        slug: "uwBlueprint",
+        company: "UW Blueprint",
+        title: "Web Developer Volunteering",
+        date: "Jan-Apr 2020"
+    },
+    {
         slug: "loblawDigital",
         company: "Loblaw Digital",
-        title: "Softwsare Developer Intern",
-        date: "Current"
+        title: "Software Developer Intern",
+        date: "Sept-Dec 2019"
     },
     {
         slug: "hackthenorth",
