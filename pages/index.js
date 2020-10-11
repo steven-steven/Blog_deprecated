@@ -64,9 +64,9 @@ const Home = () => (
                     I study Computer Engineering at the University of Waterloo. Having been through 6 internships in the tech industry, I felt like a programming career has always been something I&apos;d enjoy pursuing.
                     However, now that I&apos;m about to graduate in the upcoming 2021, it&apos;s beginning to feel surreal. What will I do in 5 years time? Those are unanswered questions but I'll find out!
                     <br />
-                    This site a reflection of the experiences and thoughts of the world around me. I&apos;m a man with many flaws. 
-                    One of them being not too good of a writer. I think this blog will help me overcome that as hopefully it gets better over time as I continue to write and write and write...
-                    Regardless, I enjoy documenting.
+                    I created this site as a platform for personal reflection, experiences and thoughts of the world around me that I'd like to share. I&apos;m a man with many flaws. 
+                    One of them being not too good of a writer. I think this blog will help me overcome that as hopefully it gets better over time as I continue to write and write...
+                    Regardless, I enjoy documenting. To be blatantly honest, I've made some posts in the past that I removed (archived) because the present me didn't like what I wrote in the past. Hey! Maybe those are signs of improvements! 🤔
                     <br />
                     I'm not entirely sure what this blog means to you reading it. It could just end up being a bunch of ramblings of insignificant brain-farts. But I hope you can get something positive out of it.
                 </EngDescription>
@@ -74,7 +74,7 @@ const Home = () => (
                 <IndoDescription>
                     <h3>Tentang Blog ini</h3>
                     Jujur sehabis 5 tahun sekolah di Kanada, mindset untuk berbicara ataupun menulis dalam Bahasa Indonesia mulai dikabuti oleh interaksi sehari-hari yang 90% berbahasa Inggris. 
-                    Mungking terkadang sulit bagi saya untuk menstrukturkan kalimat yang benar dan lancar. Maka artinya perlu banyak latihan lagi!
+                    Mungkin terkadang sulit bagi saya untuk menstrukturkan kalimat yang benar dan lancar. Maka artinya perlu banyak latihan lagi!
                     <br />
                     Sebagai seorang programmer sekaligus manusia yang amat sangat amatir, saya senang untuk terus berkreasi dan belajar hal baru setiap harinya. Pengalaman-pengalaman ini lah yang ingin kutuangkan dalam blog ini, dan saya berharap akan membawa dampak yang positif kepada siapapun itu pembacanya.
                 </IndoDescription>
