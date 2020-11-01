@@ -84,8 +84,8 @@ const Home = () => (
                     Email: steven.infinity29@gmail.com
                     <br />
                     LinkedIn:&nbsp;
-                    <a href="https://www.linkedin.com/in/steven-steven1999/">
-                        https://www.linkedin.com/in/steven-steven1999/
+                    <a href="https://www.linkedin.com/in/steven-steven/">
+                        https://www.linkedin.com/in/steven-steven/
                     </a>
                     <br />
                     Github:&nbsp;
