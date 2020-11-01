@@ -1,6 +1,12 @@
 export default {
     2020: [
         {
+            date: 'Oct 30, 2020',
+            slug: 'kelompok-ikan-besar',
+            tags: ['indo', 'nontech', 'reflection'],
+            title: 'Kelompok Ikan Besar'
+        },
+        {
             date: 'Sept 25, 2020',
             slug: 'oscillating-in-that-grey-area-we-call-life',
             tags: ['eng', 'nontech', 'reflection'],
