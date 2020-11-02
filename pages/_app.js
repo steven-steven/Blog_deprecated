@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import Router from 'next/router';
 import withGA from 'next-ga';
 
+import '../styles/tailwind.css';
 import customTheme from '../styles/theme';
 
 class CustomApp extends App {

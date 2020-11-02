@@ -7,6 +7,7 @@ import Nav from '../components/nav';
 import Main from '../components/main';
 import Footer from '../components/footer';
 import Avatar from '../components/avatar';
+import SubscribeForm from '../components/subscribe_form';
 
 const StyledAvatar = styled(Avatar)`
     height: 80px;
@@ -93,6 +94,9 @@ const Home = () => (
                         https://github.com/steven-steven
                     </a>
                 </EngDescription>
+                <h3 className='mb-2'>Subscribe!</h3>
+                <span className='text-xs'>This will only send emails when new content is posted. No spam :)</span>
+                <SubscribeForm />
             </Content>
         </Main>
         <Footer />
