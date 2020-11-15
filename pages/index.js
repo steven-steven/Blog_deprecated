@@ -72,7 +72,7 @@ const Home = () => (
                     I study Computer Engineering at the University of Waterloo. Having been through 6 internships in the tech industry, I felt like a programming career has always been something I&apos;d enjoy pursuing.
                     However, now that I&apos;m about to graduate in the upcoming 2021, it&apos;s beginning to feel surreal. What will I do in 5 years time? Those are unanswered questions but I&apos;ll find out!
                     <br />
-                    I created this site as a platform for personal reflection, experiences and thoughts that I&apos;d like to share. Furthermore, by doing this, hopefully I can improve my writing over time and also helps to document many ever-changing events and thoughts. Sometimes I remove (archive) posts if I stopped liking it or if it&apos;s no longer relevant. Hey! Maybe those are signs of improvements! 🤔 (+1 brain cell)
+                    I created this site as a platform for personal reflection, experiences and thoughts that I&apos;d like to share. Furthermore, by doing this, hopefully I can improve my writing over time and also helps to document many ever-changing events and thoughts. Sometimes I remove (archive) posts if I stopped liking it or if it&apos;s no longer relevant.
                     <br />
                     I&apos;m not entirely sure what this blog means to you reading it. It could just end up being a bunch of ramblings of insignificant brain-farts and terrible humor. But I hope you can get something positive out.
                 </EngDescription>
