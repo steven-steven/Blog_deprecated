@@ -26,6 +26,12 @@ const Row = styled.div`
     align-items: center;
 `;
 
+const Slogan = styled.div`
+    font-family: fantasy;
+    text-align: center;
+    color: grey;
+`;
+
 const EngDescription = styled.p`
     font-family: ${(props) => props.theme.fonts.engText};
     text-align: justify;
@@ -40,13 +46,15 @@ const IndoDescription = styled.p`
     font-size: 0.8em;
 `;
 
-const loopTexts = ["PROGRAMMING", "TABLE TENNIS", "BASKETBALL", "MANGA", "UKULELE", "DRAWING", "PROBLEM SOLVING", "LEARNING", "SHARING"]
+const loopTexts = ["PROGRAMMING", "TABLE TENNIS", "MANGA", "UKULELE", "DRAWING", "PROBLEM SOLVING", "FPV", "SHARING"]
 
 const Home = () => (
     <Page title={'Steven - my current iteration'}>
         <Nav />
         <Main>
             <Content>
+                <Slogan>Let&apos;s improve everyday - one brain cell at a time!</Slogan>
+                <br />
                 <Row>
                     <StyledAvatar slug={'avatar_hello.png'} />
                     <p>
@@ -59,16 +67,14 @@ const Home = () => (
                 <hr />
                 <h3>About</h3>
                 <EngDescription>
-                    Hi I am Steven.
-
+                    Hi I&apos;m Steven.
+                    <br />
                     I study Computer Engineering at the University of Waterloo. Having been through 6 internships in the tech industry, I felt like a programming career has always been something I&apos;d enjoy pursuing.
                     However, now that I&apos;m about to graduate in the upcoming 2021, it&apos;s beginning to feel surreal. What will I do in 5 years time? Those are unanswered questions but I&apos;ll find out!
                     <br />
-                    I created this site as a platform for personal reflection, experiences and thoughts of the world around me that I&apos;d like to share. I&apos;m a man with many flaws. 
-                    One of them being not too good of a writer. I think this blog will help me overcome that as hopefully it gets better over time as I continue to write and write...
-                    Regardless, I enjoy documenting. To be blatantly honest, I&apos;ve made some posts in the past that I removed (archived) because the present me didn&apos;t like what I wrote in the past. Hey! Maybe those are signs of improvements! 🤔
+                    I created this site as a platform for personal reflection, experiences and thoughts that I&apos;d like to share. Furthermore, by doing this, hopefully I can improve my writing over time and also helps to document many ever-changing events and thoughts. Sometimes I remove (archive) posts if I stopped liking it or if it&apos;s no longer relevant. Hey! Maybe those are signs of improvements! 🤔 (+1 brain cell)
                     <br />
-                    I&apos;m not entirely sure what this blog means to you reading it. It could just end up being a bunch of ramblings of insignificant brain-farts. But I hope you can get something positive out of it.
+                    I&apos;m not entirely sure what this blog means to you reading it. It could just end up being a bunch of ramblings of insignificant brain-farts and terrible humor. But I hope you can get something positive out.
                 </EngDescription>
                 <hr />
                 <IndoDescription>

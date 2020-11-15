@@ -1,6 +1,12 @@
 export default {
     2020: [
         {
+            date: 'Nov 10, 2020',
+            slug: 'starting-out-fpv',
+            tags: ['eng', 'tech', 'reflection'],
+            title: 'Starting out FPV'
+        },
+        {
             date: 'Oct 31, 2020',
             slug: 'i-am-an-aws-certified-cloud-practitioner',
             tags: ['eng', 'tech', 'reflection'],
@@ -36,12 +42,12 @@ export default {
             tags: ['indo', 'nontech'],
             title: 'Nanti Kita Cerita Tentang Hari Ini - Review'
         },
-        {
-            date: 'May 26, 2020',
-            slug: 'mental-health-month',
-            tags: ['eng', 'nontech', 'reflection'],
-            title: 'Mental Health Month'
-        },
+        // {
+        //     date: 'May 26, 2020',
+        //     slug: 'mental-health-month',
+        //     tags: ['eng', 'nontech', 'reflection'],
+        //     title: 'Mental Health Month'
+        // },
         {
             date: 'April 22, 2020',
             slug: 'when-the-storm-ends',
