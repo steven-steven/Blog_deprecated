@@ -53,7 +53,7 @@ const Home = () => (
         <Nav />
         <Main>
             <Content>
-                <Slogan>Let&apos;s improve everyday - one brain cell at a time!</Slogan>
+                <Slogan>Welcome to my creative space! <br/> Growing everyday - one brain cell at a time!</Slogan>
                 <br />
                 <Row>
                     <StyledAvatar slug={'avatar_hello.png'} />
@@ -72,9 +72,9 @@ const Home = () => (
                     I study Computer Engineering at the University of Waterloo. Having been through 6 internships in the tech industry, I felt like a programming career has always been something I&apos;d enjoy pursuing.
                     However, now that I&apos;m about to graduate in the upcoming 2021, it&apos;s beginning to feel surreal. What will I do in 5 years time? Those are unanswered questions but I&apos;ll find out!
                     <br />
-                    I created this site as a platform for personal reflection, experiences and thoughts that I&apos;d like to share. Furthermore, by doing this, hopefully I can improve my writing over time and also helps to document many ever-changing events and thoughts. Sometimes I remove (archive) posts if I stopped liking it or if it&apos;s no longer relevant.
+                    I created this site as a platform for personal reflection, experiences and thoughts that I&apos;d like to share. Furthermore, by doing this, hopefully I can improve my writing over time and also helps to document many ever-changing events and thoughts.
                     <br />
-                    I&apos;m not entirely sure what this blog means to you reading it. It could just end up being a bunch of ramblings of insignificant brain-farts and terrible humor. But I hope you can get something positive out.
+                    I&apos;m not entirely sure what this blog means to you reading it. It could just end up being a bunch of insignificant ramblings and terrible humor. But I hope you can get something positive out.
                 </EngDescription>
                 <hr />
                 <IndoDescription>
@@ -85,7 +85,7 @@ const Home = () => (
                     Sebagai seorang programmer sekaligus manusia yang amat sangat amatir, saya senang untuk terus berkreasi dan belajar hal baru setiap harinya. Pengalaman-pengalaman ini lah yang ingin kutuangkan dalam blog ini, dan saya berharap akan membawa dampak yang positif kepada siapapun itu pembacanya.
                 </IndoDescription>
                 <hr />
-                <h3>Contact Me</h3>
+                <h3>Let&apos;s stay connected</h3>
                 <EngDescription>
                     Email: steven.infinity29@gmail.com
                     <br />
