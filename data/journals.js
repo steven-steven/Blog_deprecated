@@ -1,6 +1,12 @@
 export default {
     2020: [
         {
+            date: 'Dec 24, 2020',
+            slug: 'the-remote-internship',
+            tags: ['eng', 'tech', 'reflection'],
+            title: 'The Remote Internship'
+        },
+        {
             date: 'Nov 10, 2020',
             slug: 'starting-out-fpv',
             tags: ['eng', 'tech', 'reflection'],
