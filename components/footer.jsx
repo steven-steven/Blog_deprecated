@@ -17,14 +17,14 @@ const StyledHr = styled.hr`
 `;
 
 const Footer = () => (
-    <StyledFooter>
-        <Container>
-            <StyledHr />
-            <span>© </span>
-            <NextLink aria-label="Steven - Home">Steven</NextLink>
-            <span> 2019 </span>
-        </Container>
-    </StyledFooter>
+  <StyledFooter>
+    <Container>
+      <StyledHr />
+      <span>© </span>
+      <NextLink aria-label="Steven - Home">Steven</NextLink>
+      <span> 2019 </span>
+    </Container>
+  </StyledFooter>
 );
 
 export default Footer;

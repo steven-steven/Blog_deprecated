@@ -16,10 +16,10 @@ const StyledLink = styled(Link)`
 `;
 
 const JournalEntry = ({ article }) => (
-    <StyledLi>
-        <Time>{article.date}</Time>
-        <StyledLink slug={`blog/${article.slug}`}>{article.title}</StyledLink>
-    </StyledLi>
+  <StyledLi>
+    <Time>{article.date}</Time>
+    <StyledLink slug={`blog/${article.slug}`}>{article.title}</StyledLink>
+  </StyledLi>
 );
 
 export default JournalEntry;

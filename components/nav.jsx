@@ -55,19 +55,19 @@ const NavLink = styled(NextLink)`
 `;
 
 const Nav = () => (
-    <Row>
-        <Banner>
-            <NextLink aria-label="Steven - Home">Steven</NextLink>
-        </Banner>
-        <MenuBar>
-            <NavLink slug="blog" aria-label="blog">
-                {"Blog"}
-            </NavLink>
-            <NavLink slug="work" aria-label="work">
-                {"Works"}
-            </NavLink>
-        </MenuBar>
-    </Row>
+  <Row>
+    <Banner>
+      <NextLink aria-label="Steven - Home">Steven</NextLink>
+    </Banner>
+    <MenuBar>
+      <NavLink slug="blog" aria-label="blog">
+        {"Blog"}
+      </NavLink>
+      <NavLink slug="work" aria-label="work">
+        {"Works"}
+      </NavLink>
+    </MenuBar>
+  </Row>
 );
 
 export default Nav;

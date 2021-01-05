@@ -27,13 +27,13 @@ const Date = styled.p`
 `;
 
 const ExperienceEntry = ({ experience }) => (
-    <StyledLi>
-        <Description>{experience.company}</Description>
-        <Description>{experience.title}</Description>
-        <Date>
-            <q>{experience.date}</q>
-        </Date>
-    </StyledLi>
+  <StyledLi>
+    <Description>{experience.company}</Description>
+    <Description>{experience.title}</Description>
+    <Date>
+      <q>{experience.date}</q>
+    </Date>
+  </StyledLi>
 );
 
 export default ExperienceEntry;

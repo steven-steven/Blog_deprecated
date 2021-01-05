@@ -24,10 +24,10 @@ const Description = styled.p`
 `;
 
 const ProjectEntry = ({ project }) => (
-    <StyledLi>
-        <StyledLink fullHref={`${project.link}`}>{project.title}</StyledLink>
-        <Description>{project.blurb}</Description>
-    </StyledLi>
+  <StyledLi>
+    <StyledLink fullHref={`${project.link}`}>{project.title}</StyledLink>
+    <Description>{project.blurb}</Description>
+  </StyledLi>
 );
 
 export default ProjectEntry;
