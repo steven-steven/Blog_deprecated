@@ -15,6 +15,12 @@ export default {
   ],
   2020: [
     {
+      date: 'Dec 30, 2020',
+      slug: 'building-invoice-app-v2',
+      tags: ['eng', 'tech', 'reflection'],
+      title: 'Building Invoice App V2'
+    },
+    {
       date: 'Dec 24, 2020',
       slug: 'the-remote-internship',
       tags: ['eng', 'tech', 'reflection'],

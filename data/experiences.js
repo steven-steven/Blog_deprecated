@@ -3,7 +3,7 @@ export default [
     slug: "Stackadapt",
     company: "StackAdapt",
     title: "Software Engineer Intern",
-    date: "Sept-Dec 2021"
+    date: "Sept-Dec 2020"
   },
   {
     slug: "uwBlueprint",
