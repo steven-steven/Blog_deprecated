@@ -1,6 +1,12 @@
 export default {
   2021: [
     {
+      date: 'Jan 23, 2021',
+      slug: 'menghadiri-htn-2020',
+      tags: ['indo', 'tech', 'reflection'],
+      title: 'Menghadiri Hack The North 2020++'
+    },
+    {
       date: 'Jan 6, 2021',
       slug: 'shopify-2021-summer-intern-challange',
       tags: ['eng', 'tech', 'reflection'],
