@@ -1,6 +1,12 @@
 export default {
   2021: [
     {
+      date: 'Apr 10, 2021',
+      slug: '4b-term-recap',
+      tags: ['eng', 'nontech', 'reflection'],
+      title: 'Closure (a 4B term Recap)'
+    },
+    {
       date: 'Jan 23, 2021',
       slug: 'menghadiri-htn-2020',
       tags: ['indo', 'tech', 'reflection'],
