@@ -1,7 +1,13 @@
 export default {
   2021: [
     {
-      date: 'Apr 10, 2021',
+      date: 'May 08, 2021',
+      slug: 'fpv-diary-1',
+      tags: ['eng', 'nontech', 'reflection'],
+      title: 'FPV Diary 1'
+    },
+    {
+      date: 'May 01, 2021',
       slug: '4b-term-recap',
       tags: ['eng', 'nontech', 'reflection'],
       title: 'Closure (a 4B term Recap)'

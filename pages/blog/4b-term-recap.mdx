@@ -2,7 +2,7 @@ import Time from '../../components/time';  import Post from '../../components/po
 
 import Head from 'next/head';
 
-export const meta = {  date: '2021-04-10',  title: 'Closure (a 4B term Recap)'  };
+export const meta = {  date: '2021-05-01',  title: 'Closure (a 4B term Recap)'  };
 
 export default ({ children }) => <Post meta={meta}>{children}</Post>;
 
@@ -45,11 +45,11 @@ Generally some other good advices I quote from the lecture notes:
 
 One unique thing about Rust is the concept of ownership. When passing a variable as argument you're handing over ownership of that variable to the invoked function, and you can't access it anymore. Another thing you could do is to use the borrow operator '&', which guarantees that the data will be available to the caller once the method ends. Another alternative is to just clone it. But the idea is that there can only exist one owner at a time - this allows compile-time GC! (You don't get performance penalty of deallocation during runtime, and also eliminates memory leak).
 
-It's not always flowers and rainbows though. I think explicitly having to manifpulate data lifetimes to tell the compiler certain things, or using unsafe block - are stuff that seems daunting and ugly. Packing everything in Option/Result and having to .unwrap() everything to use it seems pretty annoying as well, but I'm sure it makes error handling much cleaner (actually prefer this than Go's error handling). It takes time to get the code up and running, but when it does I generally feel pretty good about my code 😎.
+It's not always flowers and rainbows though. I think explicitly having to manipulate data lifetimes to tell the compiler certain things, or using unsafe block - are stuff that seems daunting and ugly. Packing everything in Option/Result and having to .unwrap() everything to use it seems pretty annoying as well, but I'm sure it makes error handling much cleaner (actually prefer this than Go's error handling). It takes time to get the code up and running, but when it does I generally feel pretty good about my code 😎.
 
 ** B) Asynchronous I/O, multithreading, proceses**
 
-Parallelization is always a low-hanging fruit to leverage when it comes to speeding up program (as long as tasks are independent and when its benefits outweigh the overheads). I learned to use and shared mutex and message passing for inter-thread communication. There was also an assignment where we used libcurl multi, for its non-blocking interface. In the first few assignments, we distribute a long-running work across multiple threads, which should be straight forward... except that Rust can be frustrating to work with at times.
+Parallelization is always a low-hanging fruit to leverage when it comes to speeding up program (as long as tasks are independent and when its benefits outweigh the overheads). I learned to use shared mutex and message passing for inter-thread communication (which are reviews from past OS course). There was also an assignment where we used libcurl multi, for its non-blocking interface. In the first few assignments, we distribute a long-running work across multiple threads, which should be straight forward... except that Rust can be frustrating to work with at times.
 
 Processes on the other hand, are safer (has its own memory address space) but more heavy-weight than threads (IPC has system call overheads).
 
@@ -59,7 +59,7 @@ I just hope that I don't have to touch this, ever. But there are some niche stuf
 
 ** D) Flamegraph **
 
-Flamegraph is just a top-tier profiling tool ✨. It spot-on identifies where to improve the code for performance, rather than simply 'guessing'. In the assignment for example, initializing iterators and backoffs from message-passing channels are way more expensive compared to the I/O (who would've known if it wasn't for Flamegraphs!). It was also a pretty fun activity to try different methods and see if it could improve the runitme (or slow it down 😢). 
+Flamegraph is just a top-tier profiling tool ✨. It identifies where to improve the code for performance, rather than simply 'guessing'. In the assignment for example, initializing iterators and backoffs from message-passing channels are way more expensive compared to the I/O (who would've known if it wasn't for Flamegraphs!). It was also a pretty fun activity to try different methods and see if it could improve the runitme (or slow it down 😢). 
 
 Aside: In fact, React also had their own flamegraph profiler on the browser. Gonna try this out sometime.. 
 
@@ -73,7 +73,7 @@ It was a humbling experience to get to code in a GPU (with CUDA). Basically, one
 
 In the assignments (and final), we leverage them to perform data parallism (distribute work-items over the thousands of GPU threads available). For example, to perform matrix multiplication, rendering, counting votes, etc.
 
-CUDA code is a new paradigm to me. The global cuda function called by the host will be executed by multiple independent cuda threads. From what I understood ([stackoverflow](https://stackoverflow.com/questions/14093692/whats-the-difference-between-cuda-shared-and-global-memory)), the pointer arguments copied from the host will be located in device as a 'global memory' and shared amongst all cuda threads. So coding the cuda operations I make sure not to write to the same memory output (e.g. each thread writes to its dedicated indices on an output matrix). To tell which thread does which work, normally involves using the set of indexes uniquely available to the current thread (threadIdx.x, blockIdx.x, blockDim.x, etc). The indices come from the landscape of the cuda threads, which are partitioned into 2D constructs called blocks and each blocks are partitioned in a 2D construct called grid. We are free to define the block & grid sizes in the host code (within limits). In particular this diagram below helps me a lot when visualizing the gpu thread landscape: (image source: Nvidia docs). In that example, our grid size is (2x3), block size is (3x4), and thus 12 * 6 = 72 gpu threads in total.
+CUDA code is a new paradigm to me. The global cuda function called by the host will be executed by multiple independent cuda threads. From what I understood ([stackoverflow](https://stackoverflow.com/questions/14093692/whats-the-difference-between-cuda-shared-and-global-memory)), the pointer arguments copied from the host will be located in device as a 'global memory' and shared amongst all cuda threads. So coding in cuda, I make sure not to write to the same memory output (e.g. each thread writes to its dedicated indices on an output matrix). To tell which thread does which work, normally involves using the set of indexes uniquely available to the current thread (threadIdx.x, blockIdx.x, blockDim.x, etc). The indices come from the landscape of the cuda threads, which are partitioned into 2D constructs called blocks and each blocks are partitioned in a 2D construct called a grid. We are free to define the block & grid sizes in the host code (within limits). In particular this diagram below helps me a lot when visualizing the gpu thread landscape: (image source: Nvidia docs). In that example, our grid size is (2x3), block size is (3x4), and thus 12 * 6 = 72 gpu threads in total.
 
 ![GPU thread landscape](/static/blogAssets/4b-term-recap/gputhreads.png)
 
@@ -83,11 +83,11 @@ Otherwise, CUDA code itself looks to me like standard C-code, with some hardware
 
 ** F) Scaling, queuing theory, Ops **
 
-When you can't speed up, just spend 💰 and scale. However testing could now become harder (e.g. test multiple machines), and sometimes you'd have to simulate / put it under pressure to begin seeing things blow up 💣. Potential culprit could be CPU, memory usage, network, etc. You gotta figure out the what limits your system 🕵️‍♂️🔎.
+When you can't speed up, just spend 💰 and scale. However testing could now become harder (e.g. test multiple machines), and sometimes you must simulate pressure to begin seeing things blow up 💣. Potential culprits could be the CPU, memory usage, network, etc. You gotta figure out what's limiting your system 🕵️‍♂️🔎.
 
 Queuing theory also provides another set of toolbox to numerically answer interesting questions like how much more hardware we'd need to satisfy an increase in traffic, what's the max # of users we can support, etc.
 
-There was a few notes on Ops that I think was worth the reminder. One of which is to treat 'configuration as code' - to avoid human mistakes of installing certaind dependencies, setting up, and you get to version control it. Containers are one approach but you need to remember to upgrade things frequently (which is not enforced) - for security reasons.
+There was a few notes on Ops that I think was worth the reminder. One of which is to treat 'configuration as code' - to avoid human mistakes of installing complex dependencies, setting up, and you get to version control it. Containers are one approach but you need to remember to upgrade things frequently for security reasons (which is not enforced in docker).
 
 ** Final Words from me 🧖‍♂️ **
 
@@ -107,7 +107,7 @@ We begun by understanding different levels of automation, typical sensors, what 
 
 ** B) Traditional Computer Vision to detect low-level features (like edges, lines, points) **
 - To detect edges, we could take the derivative along x & y axis. A high magnitude of derivative means there's a rapid change in intensity (edge). Derivative could also be taken using a linear filter/kernel. (a commonly used filter is the 'Sobel filter').
-- Canny Edge Detection: A general method to get clean edges
+- Canny Edge Detection: A general method to get clean edges. The steps are:
     1. grayscale the image, and smooth using gaussian blur (reduce noise)
     2. Use sobel filter to get the magnitude of lines
     3. Non-max supression: Reduce edges to a fine thin line. For each pixel, set its value to 0 if there's a neighboring pixel along a discrete orientation with higher magnitude.
@@ -115,11 +115,11 @@ We begun by understanding different levels of automation, typical sensors, what 
 
 ![Lane Finding Pipeline](/static/blogAssets/4b-term-recap/lanefinding.png)
 
-- In the assignment, we detect road lines from a video. The [starter code is actually from Udacity](https://github.com/udacity/CarND-LaneLines-P1). After masking a trapezoid region of interest, implementing Canny Edge to obtain the edges, I used 'Hough Transform' to parameterize the lines (map the x,y pixels to a Hough space and vote for the max overlaps of d, θ). Once we get the line equation (d = xcos(theta) - ysin(theta)), we draw the solid lanes for that frame.
+- In the assignment, we create a pipeline to detect road lines from a video (as shown on image above). The [starter code is actually from Udacity](https://github.com/udacity/CarND-LaneLines-P1). After masking a trapezoid region of interest (ROI), implementing Canny Edge to obtain the edges, I used 'Hough Transform' to parameterize the lines (map the x,y pixels to a Hough space and vote for the max overlaps of d, θ). Once we get the line equation (d = xcos(theta) - ysin(theta)), we draw the solid lanes for that frame.
 
-- Generally, hand-coding algorithms with first principles is good enough for low-level classification (ie. edges/dots). But for high-level semantic labels (ie. bicycle, cats), using ML makes it possible to identify the variations by learning the solution from 'data'. ML can also fail in spectacular ways, which is scary especially for these critical systems.
+- Generally, hand-coding algorithms with first principles is good enough for low-level classification (ie. edges/dots). But for high-level semantic labels (ie. bicycle, cats), using ML makes it possible to identify more complex variations by learning the solution from 'data'. ML can also fail in spectacular ways, which is scary especially for these critical systems.
 
-** C) ML - Regression **
+** C) ML - Linear Regression **
 
 - A basic loss function to optimize/minimize is 'least squares estimate' (the weights are the slope and bias). For simple linear regression, we could even use closed-form solution (ie. solve w from the first derivative of the cost function) - this involves inversing matrix which may be expensive/impossible for large data. Alternatively, gotta use gradient descent. 
 
@@ -203,7 +203,7 @@ The course is a lot of calculations and thought experiments, and I'm just glad I
 
 ** A) Time **
 
-__ Time dilation __: Einstein discovered that nothing beats the speed of light and is constant. This implies many things, one of which if you go fast enough near light speeds, you'll notice a phenomena called time-dilation (thought experiment: a really fast spaceship will see that light travel with a duration = distance/light-speed. But an outside observer will see that same light travel a longer distance. So to the observer, that light in the spaceship travel at longer duration / is slower). Thus, at high speeds, time is slower. This explains the twin paradox (if your twin make a high-speed journey into space, you will be much older when she returns). Note: you can't travel back in time though.
+__ Time dilation __: Einstein discovered that nothing beats the speed of light and is constant. This implies many things, one of which if you go fast enough near light speeds, you'll notice a phenomena called time-dilation (thought experiment: a really fast spaceship will see that light travel with a duration = distance/light-speed. But an outside observer will see that same light travel a longer distance. So to the observer, that light in the spaceship travel at longer duration and thus slower). Thus, at high speeds, time runs slower ⏱. This explains the twin paradox (if your twin make a high-speed journey into space, you will be much older when she returns). Note: you can't travel back in time though.
 
 __ Looking into the past __: Light travels about 10 trillion km a year. It'll take ~1s for light to travel from the moon to our eyes, ~8 min for light to travel from the sun, and 2.5 million years from Andromeda galaxy - the closest galaxy to ours. But what's even crazier is that this means the things we see are things in the past. If we predict the universe to be ~14 billion years old, than we won't be able to see things further than 14 billion LY (lookback time). Not because there's nothing. But it just means light hasn't had time to reach us yet 🤯.
 
