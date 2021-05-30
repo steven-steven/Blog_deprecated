@@ -1,6 +1,12 @@
 export default {
   2021: [
     {
+      date: 'May 29, 2021',
+      slug: 'book-POOD',
+      tags: ['eng', 'tech', 'reflection'],
+      title: 'Bookclub: Practical Object-Oriented Design'
+    },
+    {
       date: 'May 08, 2021',
       slug: 'fpv-diary-1',
       tags: ['eng', 'nontech', 'reflection'],
