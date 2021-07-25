@@ -1,6 +1,12 @@
 export default {
   2021: [
     {
+      date: 'Jun 24, 2021',
+      slug: 'book-infinite-game',
+      tags: ['eng', 'nontech', 'reflection'],
+      title: 'Bookclub: Finite and Infinite Games'
+    },
+    {
       date: 'May 29, 2021',
       slug: 'book-POOD',
       tags: ['eng', 'tech', 'reflection'],
