@@ -1,6 +1,12 @@
 export default {
   2021: [
     {
+      date: 'Jul 25, 2021',
+      slug: 'book-the-well-grounded-rubyist',
+      tags: ['eng', 'tech', 'reflection'],
+      title: 'Bookclub: The Well-Grounded Rubyist'
+    },
+    {
       date: 'Jun 24, 2021',
       slug: 'book-infinite-game',
       tags: ['eng', 'nontech', 'reflection'],
