@@ -1,6 +1,12 @@
 export default {
   2021: [
     {
+      date: 'Aug 28, 2021',
+      slug: 'the-design-of-everyday-things',
+      tags: ['eng', 'nontech', 'reflection'],
+      title: 'Bookclub: The Design of Everyday Things'
+    },
+    {
       date: 'Jul 25, 2021',
       slug: 'book-the-well-grounded-rubyist',
       tags: ['eng', 'tech', 'reflection'],
