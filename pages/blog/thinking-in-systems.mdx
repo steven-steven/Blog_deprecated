@@ -1,0 +1,435 @@
+import Time from '../../components/time';  import Post from '../../components/postPage';  
+
+import Head from 'next/head';
+
+export const meta = {  date: '2021-10-24',  title: 'Thinking in Systems'  };
+
+export default ({ children }) => <Post meta={meta}>{children}</Post>;
+
+# Thinking in Systems
+
+<Time>{meta.date}</Time>
+
+When you think about it, life is full of systems. The control of your room temperature 🌡, your brain 🧠, body 🫁, the hiring and growth of a company📈, a country🏝, government bodies 🧑‍⚖️, population 👨‍👩‍👧‍👦, forest 🌳, garbage 🗑, shipping 🚚, financials 💰, markets 🍑, pandemic 😷, or even one that I think of most days - the software I build/maintain 🧑‍💻. Our entire ecosystem is a systems within systems, all things, all interconnected. Thinking in system helps one understand, manage, change, see opportunities to leverage. It can be a superpower and that's what this book is about; an intro to Systems Thinking. 
+
+It's something I want to practice thinking more of. The world is complex, interconnected and changing. You have to see them through all sorts of lenses (eyes, microscope, systems theory, science,… they're all valid and complementary). The more lenses you have, the better. (analogy: story of blind men trying to perceive elephant)
+
+📖 'System': Elements interconnected to produce patterns of behavior over time
+- System problems are 'within'. (It's tempting to assume the cause/knob is 'out there'). No one creates the problem, the system structure causes it's own behavior.
+- Can only be fixed from within (Good because it's within our ability, but one needs courage)
+- Diagrams > sentences: can simultaneously show many directions/connections
+
+### 3 things a system must have (order of increasing importance)
+1. Element
+    - Easy to notice, but can also be intangible (e.g. pride, expertise, confidence)
+2. Interconnection
+    - Holds elements together, often by flow of information/events
+    - Systems are more than sum of its parts. (1+1 > 2. Connection '+' adds value)
+3. Function/purpose
+    - Hard to notice. Purpose ≠ stated goals
+    - Deduced from observed behavior over time.
+    - Sometimes purpose aren't intentional, but conditioned by its elements. (consider behavior of all actors involved)
+
+### Fundamentals
+📖 Stock: Accumulated information/elements over time
+- Stores memory/snapshot of the flows
+- Act as delay buffers. Stock change slowly because flow < ∞
+  - Pros: allow stability, time to maneuver, experiment, evaluate policies. It decouples inflow & outflow rates so it can maintain imbalance if one suddenly spikes.
+  - Cons: slow feedback/impact-review. Late information/action can be ineffective
+
+📖 Flow: Rate of stock goes in/out (imagine a water faucet or sink)
+- We tend to focus on inflow > outflow. Remember there's 2 ways to fill a bathtub. (You can grow by investing new stock OR extending the lifetime of your existing stock)
+- Use time graphs to study behavior trends (purpose), instead of focusing on each event
+
+📖 Feedback loop: Changes the flow depending on size of stock
+- Feedback is bidirectional (can increase/decrease level of stock)
+- Perhaps all decision are feedback loops (its made in response to some level of stock/info)
+- 2 types
+  - Balancing feedback loop:
+    - goal-seeking and stability-seeking.
+    - Opposes whatever direction of change imposed on system
+    - Compare current stock with goal, and adjust the flow to correct itself.
+  - Reinforcing feedback loop: 
+    - Amplifyies, snowballs, grow exponentially
+    - Happens if stock can reproduce/reinforce itself.
+- If A cause B, also see feedbacks 🧐 (i.e. how might B influence A, or A reinforce itself)
+  - i.e. if population growth cause poverty, how might poverty cause population growth?
+- Feedbacks (like stocks) have delay too:
+  - Time between making decision and action taken
+  - A delay in balancing loop make system oscillate (overshoot/undershoot your actions).
+  - i.e. delay in a car shop inventory seems trivial, but if we talk about an entire automobile industry's inventory, ordering too much/little affect downstream production of parts, material, jobs, stocks, delivery, construction, each with their own feedbacks (economy and industries are all responding to each other through delays)
+
+### Some example system models and their characteristics
+- Competing feedback loops (stock with 1 reinforcing & 1 balancing loop):
+	- Loop dominance shifts around (i.e. grow exponentially, die, or reach equilibrium).
+  - Models help system analyst explore 'what can happen' when driving factors change.
+- Constrained systems (systems with >1 interacting stocks):
+	- i.e. food, material, workers, pollution, are examples of stocks that constraint systems
+	- These stocks are finite resource. They'll run out sooner or later. (balancing loop)
+	- The constraining stock can be renewable/non-renewable
+		- Non-renewable resource (stock-limited): Entire stock is available at once, can be extracted at any rate. Slow growth to allow time to develop alternatives. 
+		- Renewable resource (flow-limited): If regeneration rate == extraction rate.
+  - Place/strengthen balancing feedback before it's constrained by these stocks
+  - e.g. a fishery economy / logging industry (renewable constraint)
+    - Affected by price, regeneration rate, efficiency of fishing technology.
+    - Advanced tech cause greater oscillations (regeneration cycle takes longer after collapse) by scooping the last few. Can drive resource to extinction
+
+### 3 characteristics of highly functionally systems
+1. Resilience: 
+	  - ability to survive and persist within variable environment. Can recover self-repair. Many feedback loops in place to restore stock if one fails. (imagine Kubernetes)
+		- Resilience != stability. Even if system has been stable, resilience can't be noticed until the system breaks down (i.e. balancing loops damaged, or exceed limits). (imagine immune system)
+	  - To be resilient means to have a big plateau field (playing space) to cover against all sort of cases. More freedom to play/move around safely, make more proactive decision and less reactive.
+2. Self-organization
+    - Capacity of system to make its structure more complex (able to learn, diversify, complexify, evolve).
+    - Threatens current structures / stability, but drives new innovative ways and surprises (infinite game). Requires freedom, experimentation, some amount of disorder.
+    - Used to think its too complex to understand. But begin to discover that few simple principles can lead to wide variety of self-organizing structures. (i.e. fractal geometry, dna, GA..)
+3. Hierarchy
+    - Arrangement of systems and subsystems (systems within systems)
+    - Breaking down complex systems to smaller 'stable' substructures allow time required to evolve.  Help subsystems do their jobs better.
+    - Loosely coupled, reduce the amount of information any part of the system need to keep track of. (imagine Microservice or domain driven design DDD)
+    - Issues:
+      - Alignment: If subsystem's goal > system's goal, the behavior is suboptimal (i.e. cheat to max personal grade, personal glories over winning as a team…). 
+      - Control: should be enough control to achieve coordination to system goal, and enough autonomy to allow self-organization in subsystems. (i.e. allow students to explore field of knowledge freely, brain allow cells to self-maintain themselves)
+
+### Beware of System surprises and how to navigate them
+Accept that we're going to be surprised & learn to live in complexity. Everything we know is a model. Although we'll never perfectly match the real world, we can improve our understanding. System thinkers go back & forth between structure (mental model of stock/flow/feedback diagram) & behavior (event time graphs)
+
+A. Bad mental model representations
+- Problem: often pay too much attention at the system-generated events, rather than their history/behavior.
+- History > Event-event model (event A cause event B): Don't be fooled by events (even if they’re the most visible). They are just outputs of system black-box. You need to look at event over time (i.e. time graphs). Long-term behavior give clues to underlying system structure, which is key to knowing 'why' (source of system behavior) not just what happened.
+- Statistical math equation isn't a good system representation: It assumes flow affects flow (input output model). But flows are independent of each other. Its blind to the stock and how they affects the flow. It only work for short-term when system don't change.
+
+B. The non-linear world often surprise our linear-thinking expectations.
+- We think 2x action cause 2x response
+- Non-linearity initiate complex behavior, shifts dominance in loops and can switch system behavior to different mode.
+- i.e. use of insecticides change system: kill pest which indirectly kills (replace) natural predators of pests (weaken the balancing loop). Cause uncontrollable growth of insects if your remove the insecticide.
+- i.e. soil erosion don't affect crop until it reach the tipping point, too much advertising can turn interest into disgust
+
+C. Nonexistent boundaries / Clouds
+- The source/sink stocks that's ignored to simplify system diagram
+- We try to draw boundary in naturally boundless system.
+- Need to invent boundaries for clarity/sanity, but don’t forget that we've artificially created them. (include them when needed)
+- Examples
+  - i.e. when source of materials are assumed to be abundant and isn't included in the system boundary, a sudden shortage will 💥.
+  - i.e. landfills fill up quickly.
+  - i.e. traffic -> highway -> attract house development -> more cars -> traffic
+- Create boundary based on the problem/discussion, not what our minds are used to (national boundary, ethnic boundary, public/private responsibility boundary, boundary between rich/poor, polluters/pollutes, etc).
+  - Thoughts: Projects/context at Shopify often cut across teams.
+
+D. Limiting factors / bottleneck
+- i.e. capital, technology, clean water, clean air, dump space, energy
+- Most important system input is one that's most limiting
+- Growth change what is limiting. To monitor 'growth' is to continuously monitor/foresee potential limiting factors. Increase limiting factor -> system grows -> another factor becomes limiting.
+- Note: The choice is not to grow forever (impossible), but to decide what limits to live within (self-imposed limits). If you don't, the environment will enforce the limits for you (system-imposed limits)
+
+E. Delays - learn to wait
+- All stocks are delays and most flows have delays (i.e. shipping, perception, processing, maturation)
+- Some foresight is essential, to prevent being reactive to the problem (and it takes long time for action to take effect)
+
+F. Bounded rationality
+- People make rational decisions with info they have. But incomplete/delayed information of distant parts of the system leads them to under/overinvest.
+- Problem: We don't know what others will do, we can't foresee the impact of our action on whole system, so we stick with the limited info we have. But even then, we often make non-optimal decisions for ourselves (i.e. misperceiving risk, discounting the future and focus on short-term, filter out info we don't like, …)
+- If you switch position with someone whose behavior you never understood, it's unlikely that you'll transform system with your old perspective. (i.e. Becoming a manager stops you from seeing labor as partner but as cost to be minimized, becoming poor let you see the short-term rationality and necessity of having many children, if you're a struggling fisherman with imperfect knowledge of fish population, you'll overfish).
+- Note: bounded rationality is not excuse, but it lets you understand why behavior arise and blaming the individual rarely helps the outcome.
+- Solution:
+  - Sharing context (better, more complete, timelier information) lets everyone enlarge / step-out of their bounded rationality, and start acting for the good of all/most.
+  - Redesign system to improve information, incentives, disincentives, goals, stresses, constraints on specific actors
+
+### System Archetypes: traps & Opportunities
+More than surprising, some systems produce troublesome behavior. We call them 'archetypes'
+- Are 'traps' because standard responses (i.e. blaming, disciplining, firing, pulling levers harder) often won't fix structural problems.
+- Are also 'opportunities' to improve the system
+1. Fixes that fail / Policy resistance
+	- Balancing loop can be good or bad (depends on what it persists).
+	- Comes from bounded rationality of system actors (each with own goals)
+		- E.g. if enforcement cut drug imports (moves the stock in one direction) it causes the other actors to double their efforts to pull back (price and profit go up and evade the borders)
+		- When everyone pulls in all directions, it takes effort for everyone to keep system from going against one if one were to back off. (It sets a fool's choice situation where either win/lose. Can't win together without mutual trust to let go, calm down and look into the feedbacks)
+	- Option: Find a common goal to break out of bounded rationality. (e.g. basis for population policy shouldn't be family size and abortion laws, but quality of child care like healthcare and education. Something that everyone aligns).
+2. Tragedy of the commons
+	- Under their best interest, everyone exploits the shared commons
+	- The resources must be limited && erodible when overused (less resources makes it harder to bounce back)
+	- No (or delayed) incentive/feedback for users to cut back. The user has everything to gain and keeps growing.
+	- Commons: resources or sinks like a shared pollution site
+	- The system make selfish behavior more convenient/profitable
+	- Option:
+		- Educate & exhort: social pressure or morality.
+			- Unreliable for those who don't respect tradition/honor.
+		- Privatize the commons: have someone responsible for it
+			- Strong feedback and reliable. But not always an option
+		- Regulate the commons: Enforce policing/penalty. Regulators must be trusted by community (non-corrupt) and have expertise to interpret/monitor resource and create feedback
+			- Mutual coercion / agreement. Limit abuse but preserve freedom to use. (i.e. bank, traffic light, parking charges)
+			- E.g. restore missing feedback by charging households for their garbage disposal amount 
+3. Drift to low performance / boiled frog syndrome
+	- When system not only persist bad behavior, but keeps getting worse
+	- E.g. rivers gets dirtier, quality of education,..
+	- In balancing feedbacks, the difference between actual state vs desired state -> determines action. But actual state != perceived state.
+		- And actor tend to believe bad news more than good news. They remember bad results, and dismiss good ones as outliers.
+		- The desired state is also influenced by perceived state. If perceived performance slips, goal/expectation is allowed to slip.
+		- This becomes reinforcing loop downhill
+	- Is a gradual process
+		- Analogy: frog happily stays in pot if heat increase gradually. (Well.. It's not so much warmer than it was a while ago)
+		- We forgot how much better things used to be.
+	- Options:
+		A. Keep standards absolute regardless of performance (measurable)
+		B. Make goals sensitive to best performance (if I finish a V4 climb, that's not luck. It’s the new standard and you leveled up)
+	- Reframe to turn it into uphill reinforcing loop: "The better things get, the harder I'll work to make them even better"
+4. Escalation
+	- State of stock depends on the state of another. (constant comparison to try surpass the other)
+	- E.g. sets system to arms race, wealth race, smear campaign, escalate violence/loudness.
+	- Reinforcing feedback, and is exponential. Leads to extremes surprisingly quick. Exponential can't go on forever, one will collapse.
+	- Option:
+		- Avoid getting in it. Refuse to compete (unilateral disarm) to interrupt the reinforcing loop.
+		- Negotiate a balancing loop to control escalation (i.e. policy, parents)
+5. Success to the successful
+	- Winners is rewarded with means to compete more effectively.
+	- E.g. rich richer and poor poorer (in terms of income, assets, education, opportunity). Poverty will receive:
+		- worse education
+	  - few marketable skills
+		- low-paying jobs
+		- can't borrow from banks to invest or gets charged with more interest rate through moneylenders
+		- Pay higher prices because they only can afford small quantities
+		- Relatively government expenditure allocated to them because they're often unorganized/inarticulate
+	- Reinforcing feedback that divide the system into 'winners who go on winning' and 'losers who will keep losing'
+	- Analogy: 'competition exclusion principle' in Ecology
+		- 2 species can't live in same ecology and exactly same resources. One will eventually win, multiply, and keep winning, driving the other to extinction.
+	- Options:
+		- Diversifying (species exploit new resources and don't compete in same game). Won’t work if there's a monopoly in resources.
+		- Leveling the playing field
+			- E.g. Game platform where anyone could start fresh, sports give handicap for weaker players
+			- From simple morality, or practical understanding that losers who have no hope of winning could get frustrated enough to destroy the playing field.
+			- Devise rewards that don’t bias next round of competition
+6. Addiction (shifting burden to the intervener)
+	- E.g. drugs, how industry depends on subsidy, farmers rely on fertilizers, economy rely on cheap oil, long-distance shipping that used to be carried with railroads/subway is intervened with highways (does it actually help? Not really), shift responsibility of practices of healthy lifestyle to intervening doctors/medicines, Fix oil price in response to depletion to pretend nothing happen instead of investing on renewables…
+	- In balancing feedback, one could change the perceived state. It doesn't improve actual state.
+		-  Can be a good thing if it increase ability to keep system in desired state or help actual state from declining.
+	- Problem: The intervener don't last, because it doesn't solve the real problem (e.g. inefficient company, unhealthy soil)
+		- Intervener will step in to take some of the load. Everyone's happy until original problem reappears. Intervener applies more 'solution' then. Quick and dirty 😈 to solve symptoms.
+		1. Real problem is disguised and you fail to act on it quickly
+		2. Intervention weakens the capability of system resilience
+	- Addictive policies are so easy to sell and fall for.
+	- Options:
+		- Confronting with the pain / withdrawal. Gradually, or a non-addictive policy (i.e. group support, oil alternatives) can be put in place first.
+		- Avoid it in the first place. Intervene in a way that helps the system strengthen itself to help itself (rather than taking over system, start with questioning the obstacles and system structure that cause it to fail)
+			- Reminder from a Shopify podcast: Removes merchant friction, but not all friction. You want them to grow beyond what you taught them.
+			- As an intervener, you want to eventually remove yourself
+7. Rule beating (don’t follow rules)
+	- Evasive action to get around intent of system's rules. The rule isn't broken, but the spirit of the rule is broken.
+	- E.g. drivers obey speed limit only when they see police car, finding ways to cheat to pass the exam.
+	- Options:
+		- Rule beating is a useful feedback to revise, improve, or explain the rules better. Turn the self-organizing capability (creativity) of system in good direction - align the subsystems.
+	- Indicator: when something stupid is done as a way around rule
+8. Seeking wrong goal (follows the rule, but produce result nobody wants)
+	- Is the direction setter, and one that determines success/failure for balancing loops.
+  - Badly define goals produce unwanted results. A system won't produce behavior unless a goal is defined that measure that behavior.
+	- E.g. 
+		- if measured by standardized test, system will output good performance on standardized test. But is it really correlated with good education?
+		- Using GNP (gross national product) as measure of welfare. But is wealth produced by economy really good measure for health, education, joy, beauty of poetry, integrity, clean environment, wealth inequality, courage, wisdom, everything that makes life worthwhile? It causes more consumption than efficiency. High GNP isn't necessarily good.
+	- Options:
+		- Specify indicator/goal that reflect desired behavior. Reminder: Effort != Result. Should optimize the result (e.g. welfare) rather than effort (which could lead to something else. E.g. GNP)
+	- Indicator: when something stupid done "because it's the rule". Or when it leads to finite game rather than building resilience for the infinite game.
+
+### Leverage points
+Finding the small changes that lead to large behavior shift (silver bullet), AND pushing it in the right direction and at the right amount (use the bullet correctly)
+  - E.g. too-little / too-much growth is bad
+  - Complex systems can't be generalized. It's not recipe to find leverage points (even when you do it's hard to know how to use them), but to think more broadly about the system.
+  - Higher leverage => the more the system will resist it
+  - "Seems that mastery is less about moving leverage points, but more about strategically, profoundly, madly, letting go and dancing with the system"
+1. Transcending paradigm
+	- Stay unattached to paradigms, flexible, and know that there's never a 'true' paradigm. 
+		- This implies that you can choose whichever one serves your purpose. Listen to the universe and be open-minded. Look at the spacious possibility and pedal in all directions. Nothing is guaranteed.
+	- Enlightenment: let go into not-knowing
+2. Paradigm
+  - Are unstated assumptions. Shared belief our society accepts to be true, but isn't the fact.
+  - E.g. 
+    - money measures meaning (thus people who earn more worth more)
+    - nature is stock for human purposes
+    - growth is good
+    - one can 'own' land
+    - evolution stops with homo-sapiens.
+    - Egyptians build pyramid because their belief of afterlife
+    - We build skyscrapers because our belief that space is valuable
+  - Paradigms are what create systems (goal, flow, stocks, etc). 
+    - Those that intervene at this level can transform systems.
+    - Hard but nothing constrains us from doing so. All it takes is perspective or an aha! moment to change one's paradigm. Whole society however will likely resist challenges to the current paradigm.
+  - So how do you push new assumption paradigms in society?
+    - Voice out with assurance, work with active & open-minded people who has public visibility/influence.
+    - Keep pointing the anomalies in old paradigm
+    - Building a model of the system, will force you to see it as a whole
+3. Goal
+  - Everything lower down the list will adjust to the goal
+  - Making profits is not a goal, it's just a means to continue the game. Goal is often to grow, but it's bad when there's no balancing loop (e.g. one must keep ecosystem balanced and evolving, keep market competitive)
+  - It's a high leverage if someone/leader can push systems to a new goal.
+4. Self-Organization (enable evolution in system structure)
+  - Social revolution / evolution is the ability to recreate structures and behaviors. Able to change any system aspects down this list (rules, feedback, delays, ..)
+  - Strongest form of system resilience. System that can evolve, can survive almost any change
+  - E.g. thoughts in the brain, our immune system's ability to develop responses to new attacks
+  - Seems mysterious, divine, miraculous. But actually, all you need is some cleverly written rules about how to subtract/add from itself under certain conditions. 
+    - E.g. DNA, genetic algorithm from my 457A class..
+    -  Evolution requires a material stock (i.e. DNA, knowledge) that's highly variable (i.e. mutation, creativity), and means of selecting and testing new patterns (i.e. changing environment where only some meets conditions for survival, if the tech meets the market needs or funding)
+  - Self-organization is why biologist worship bio-diversity
+    - The widely varied stock accumulated over time are source of potential for evolution. 
+    - E.g. Cultural diversity is a source of behavior repertoire, journals are source of technological potential
+    - Being open to diversifying helps you evolve in unimaginable and uncontrollable ways. But you have to let go of control and invite surprises.
+    - Any system that wipes out diversity and experimentation, is doomed in the long term on this highly-variable world.
+  - Intervention point: encourage variability, experimentation, and diversity
+5. Rules (incentivs, punishments, constraints)
+  - Rules define the game. Imagine how our behavior change if we restructure rules differently
+    - E.g. imagine no degrees and students come to school when they want to learn something, suppose we're graded as a group not as individuals..
+  - Those who make the rules have most leverage
+  - E.g. new world trade system sets off many alarms. Designed, run, and benefits the corporations. Rules exclude any feedback and meetings are closed off from the press. Recipe to unleash the 'success to the successful' reinforcing loop until the centralized power accumulates and destroys themselves.
+    - Thoughts: Have the rules written in decentralized blockchain :p
+6. Information Flow
+  - It's not strengthening/weakening a loop, it's a new loop delivering new balancing feedback.
+  - Adding/restoring information is much easier/cheaper intervention
+  - Make sure the presented information (dis)incentivise people to do the right thing
+    - E.g. price is not a good feedback to scarcity of fish population. Scarce fish becomes expensive and can incentivise more fishing to catch the last few.
+    - E.g. Rather than just exposing level of declining groundwater, setting a steep price as pumping rate increase at a dangerous rate provides the missing feedback.
+  - There's a tendency to avoid accountability for their own decisions. This is why this kind of leverage is popular with the masses, unpopular for those in power.
+    - E.g why can't taxpayers see/choose where the money is going
+    - E.g. suppose politicians who wages war is required to sit in the frontlines
+    - Effective if you get those in power to permit it, or go around and make it happen anyway.
+    - Ensure accountability through transparency to monitor decisions for feedback
+7. Reinforcing Feedback loops & its strength
+  - Improve self-reinforcing ability
+  - Are a source of growth, explosion, and collapse in a system if kept unchecked
+  - Look-out for places where the more there are of something, the more is there possibility of having more.
+  - Usually, slowing the growth (reducing gain of reinforcing loop) is a higher leverage than strengthening balancing loop or letting reinforcement loop run.
+    - Constraint the cause rather than mitigating the effect
+    - E.g. When driving too fast, better to slow down than installing responsive breaks and steering advances
+    - E.g. slowing population/economic growth allow many balancing loops (tech/markets) time to function.
+    - E.g. anti-poverty programs to help the poor is a weak balancing loop compared to strong reinforcement from ''success to the successful" archetype. It's much effective to weaken reinforcing loop by income/inheritance tax, universal high-quality public education, and other ways that levels the playing field from the other direction.
+8. Balancing Feedback loops & its strength
+  - Improve self-correcting ability
+  - Needs a goal, monitoring device to detect deviation, and a response mechanism
+  - Some are inactive most times, but critical for emergencies. So don't take them out even though you may not see its effect yet, or it appears to be costly. In the long term we are resilient with them. 
+    - i.e. sleep, socializing, healthy food
+  - It's strength (ability to keep it close to goal)
+    - Depends on monitoring accuracy/frequency, power/speed of response, directness/size of flow
+  - Important relative to the impact its designed to create.
+  - E.g. democracy work better without strong feedback from central communication with self-interest, big industry need big government to keep it in check, nutrition and exercise to keep body resilience, impact fees and taxes to recapture the public cost to private benefits. 
+9. Delays
+  - Delayed information or response when adjusting your stock will cause you to overshoot/undershoot the goal.
+  - You can't respond to short-term changes with long delays
+    - E.g. Delay in constructing powerplant causes over/undercapacity of oscillations even with forecasting.
+  - It's often easier to slow down changing flow rate (control faucet), rather than feedback delays.
+  - But if delays can be changed, it can cause big effect (good/bad. Ake sure you push it in the right direction!)
+10. Stock-flow structure
+  - The only way to poorly-laid out system is to rebuild it. (small refactoring can make huge impact on scale)
+  - Often slowest, expensive, and sometimes unchangeable.
+    - Physical structures can't be agile> Leverage is in proper design in the first place
+  - After it's built, leverage is mostly understanding limits, bottlenecks, fluctuations, efficient use
+11. Buffer size (size of stable stocks relative to flows)
+  - Big stock (and small flows) are more stable
+    - But if too big, it reacts too slowly / inflexible, and hard to maintain
+    - E.g. small projects/repository is unstable but fast to change, just-in-time inventories
+  - There's leverage but usually very hard to change.
+12. Numbers/constants/parameters
+  - Controlling the in/out flows and adjusting the faucets change the rate, but if it's the same faucet plumbed to the old system, behavior isn't going to change much.
+  - e.g. spending, taxing, annual forestation limits, prices that control profit, min wage, firing politicians, …
+  - Not a lot of leverage in fiddling with details.
+  - Parameters still matters, especially to those close to the flows (people care a lot about wage), but it rarely change the behavior of entire economy system.
+  - Parameters become leverage points when they kick off items higher in the list (ie. Goals or rate of reinforcement loops).
+  - Most of the time system don't evolve in the details. Good/bad falls in a range rather than a critical threshold. Don't sweat it and move on!
+	
+	
+	
+	
+		
+		
+### Living in world of system
+- Biggest mistake system thinkers make is that analysis is key to prediction & control. We tend to exaggerate our findings as expression of hope and expectations.
+  - Implementation is harder than theory
+  - New insights will raise even more questions then it will answer
+  - Systems are unpredictable an uncontrollable (non-linear, self-organizing, feedbacks). Understandable in the most general way (uncertainties), and doing what you want it to do is only temporary at best. We can't reduce complexity.
+  - We can't keep track of everything and optimize. We won't even know what to optimize
+- If you can't understand, control, predict, what is there to do? There's plenty of things to 'do'!
+  - Get out from the role of an omniscient controller! Stop being blinded by the illusion of control.
+  - Envision the outcome instead of seeking control
+    § Can't predict, but can be envisioned and brought lovingly into being
+    § Can’t control, but can be designed and redesigned
+    § Can't charge with certainty, but we can expect surprises, learn, and profit from them.
+    § Can't impose our will, but we can listen to the system and discover properties/values that can work together to produce something even better.
+    § Can't figure it out, but we can dance with them!
+  - Like learning dancing, or rock climbing, there are things you can and cannot control. Requires us to stay awake, pay close attention the universe, and lots of training and practice!
+  - Requires more than ability to calculate, but our full humanity (rationality, intuition, compassion, vision, morality ...)
+		
+### Systems wisdoms
+1. Get the beat of the system
+    - Learn the history, how stock and people behave, time graphs, patterns of the system from the past, before trying to change / disturb the system. Perhaps this is why history class is important
+    - Can avoid careless hypothesis / theories not based on fact
+    - Helps you not only finding 'what's wrong', but 'how it got there', 'other possible modes of behavior', 'what future behavior might look like', and even suggest how system elements are interconnected.
+    - Helps to find the right solution than fixing the symptoms.
+    - Action item: spot these in conversations, news, where one might jump to solutions without paying attention to system behaviors (perhaps use the 5-why technique)
+    - E.g. The need to find more oil, the need to ban abortion, the need to attract more growth, is NOT 'the problem' (the problem is deeper down the system and there's many ways to tackle it)
+
+1. Expose your mental model
+    - Drawing diagrams/equations make our assumptions transparent to others
+      - Clear your thoughts, admit uncertainties, and correct mistakes faster
+      - Mental flexibility: Willing to expand and redraw boundaries, add new connections
+      - i.e. OneNote, Miro, etc.
+    - Mental models are very slippery. Don't let assumptions slide around.
+    - Invite others to challenge your assumptions, add their own. Collect as many hypothesis/models as possible. Consider all possible until some evidence rules them out.
+    - Is like science lab experiment, but is hardly done in other parts of life / sectors.
+2. Respect and distribute information
+    - Don't distort, delay, withhold information streams. It makes feedback loop malfunction
+    - E.g. Pollution decrease 40% after publicizing chemical emission data. Not illegal, but incentive is built just by releasing previously withheld information (and reporters making 'top 10 list of local polluters').
+      - People act on information, and flow of information creates that feedback for free
+    - Information is power (and thus those who regulate them)
+      - Thoughts: is unregulated information always good? (i.e. social media)
+3. Use language with care and enrich them
+    - Information streams are composed of language
+      - "We don't talk about what we see, we see only what we can talk about" - Fred Kofman
+      - We understand what we can describe. Language is foundation of our perspective, cultures
+      - E.g. A society that don't talk about 'resilience' is likely not going to be one. A society talking about 'companies creating jobs' won't inspire the people to create their own.
+      - Diction and phrasing matters and will change people (something I'd learn in English class in HS). Exposure to more will only expand your perspectives (through reading or conversations).
+    a. Avoid language pollution. Make it clear, true and meaningful.
+    b. Enrich language (corpus expands with new expertise)
+      - E.g. Eskimos have many words for snow, because they studied and use it in depth.
+      - New words have to be invented/coined, as we pay closer attention to the system's complexity.
+4. Focus on what's important, not just what's quantifiable
+    - If you optimize for quantity, quantity will be the result.
+    - Because computer models require models, we're often forced to make up scales to quantify what's qualitative (i.e. trust scores, level of prejudice, ..)
+    - But pretending something don't exist because it's hard to quantify, will mislead the model.
+    - Human beings are endowed with ability to count AND ability to assess quality. SO use it!
+      - Be a quality detector. If it's ugly, inappropriate, unsustainable, morally degrading, humanly demeaning, say so. Pay attention to it even if you can't define or put value on it.
+      - If systems aren't designed to produce them, and no one voice about their presence/absence, they will cease to exist.
+5. Feedback systems need dynamic/feedback policies structured for learning
+    - feedback system (dynamic and self-adjusting) can't be governed by static unbending policy. It's more effective/cheaper to design policy that also change depending on state of system.
+      - Since we expect system to change, the policy should as well.
+      - Implication: need to monitor the effect of policy as a feedback
+    - The best policy contain feedback loops and meta-feedback loops (spins up, alter, and correct loops dynamically)
+    - E.g. rather than spend money on guards/borders (static policy), one could spend money on Mexican economy to close the gap in living standards between Mexican and the US (dynamically designed)
+6. Aim for good of the whole
+    - Don't optimize subsystem while ignoring the whole. (e.g. premature optimization in programming)
+7. Listen to wisdom of the system
+    - Be careful to change stuff that destroys the self maintenance capability. Before changing pay attention to what's there and why. Investigate the right intervention
+    - E.g. talk to users and listen to what's in their way of growth. Loans, literacy and accounting skills may benefit the community more than bringing in outside investors.
+8. Locate responsibility in the system
+    - When analyzing, find how system creates its own behavior, and the external influences/events that affects it
+      - External influence can be controlled or uncontrolled. For the uncontrolled its easier to increase internal responsibility, than trying to control what's outside.
+    - When designing, design for 'intrinsic responsibility'
+      - 'Intrinsic responsibility': system designed to send the consequences directly to the decision maker (strong feedback)
+      - Privatizing the commons increase 'intrinsic responsibility', and centralizing the commons lowers it (longer feedback between downstream to upstream)
+      - Its a weak feedback loop when decision makers don't see impact they make. (e.g. put the stats beside the policy/rule to close that gap. It's irresponsible when decision makers can cause damage at a distance and never sees it)
+9. Stay humble, how to be a learner
+    - Often requires intuition, not just rational decisions. Ready for surprises.
+    - Remind yourself how little you know, how incomplete your mental models are within the complexities of the world. 
+      - When you don't know, experiment (trial-error), learn, and repeat. Take small steps, constant monitoring, be willing to change course. (thrive on change)
+      - Pretending you're in control sets you up for mistakes and not learning from it.
+    - Normalize error-embracing as it's a condition for learning. Share mistakes and learn from another.
+10. Celebrate complexity (disorder, self-organization, variety)
+    - The mess in the universe is what makes it work beautifully.
+    - A part of us like certainty, straight lines, uniformity. But we ourselves evolve and shaped by complex feedback system
+11. Expand boundary of time (think long term)
+    - Project timelines don't extend long term (e.g. election, payback period, generations).
+    - When you only think short-term, you also tend to loose capacity to deal with present problems. (analogy: tech debt builds up over time)
+    - Open eyes for both long & short term (system as a whole). In systems, there's no distinction in both because one is nested in another (actions radiate at different speeds. We're affected by actions of yesterday, decades, and centuries ago).
+12. Defy disciplines
+    - Learn without limits. Follow the system wherever it leads, often cutting across disciplines. Share each other's lenses, willing to be taught, admit ignorance, and see the magic happens.
+13. Expand boundary of kindness
+    - All systems are interconnected. If one looses everybody looses. You should care for each other, not only from moral standpoint, it also makes sense systematically.
+14. Don't erode goal of goodness
+    - The worst example of 'Drift to low performance' archetype is eroding goals of morality. Bad human behavior are often magnified, affirmed by culture as typical. But the numerous examples of human goodness is left unnoticed (not 'news' and seen as exceptions).
+      - Thus, expectations lowered, feedback weakens
+      - Public is full of cynicism, public leaders are immoral and not held to account, it's much easier to talk about hate in public than talk about love.
+    - We know what to do for this archetype!

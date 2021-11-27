@@ -1,5 +1,11 @@
 export default {
   2021: [
+    // {
+    //   date: 'Oct 24, 2021',
+    //   slug: 'thinking-in-systems',
+    //   tags: ['eng', 'nontech', 'reflection'],
+    //   title: 'Bookclub: Thinking in Systems'
+    // },
     {
       date: 'Aug 28, 2021',
       slug: 'the-design-of-everyday-things',
