@@ -1,11 +1,11 @@
 export default {
   2021: [
-    // {
-    //   date: 'Nov 22, 2021',
-    //   slug: 'dropping-nft',
-    //   tags: ['eng', 'tech', 'reflection'],
-    //   title: 'Dropping NFT'
-    // },
+    {
+      date: 'Nov 22, 2021',
+      slug: 'dropping-nft',
+      tags: ['eng', 'tech', 'reflection'],
+      title: 'Dropping NFT'
+    },
     // {
     //   date: 'Oct 24, 2021',
     //   slug: 'thinking-in-systems',
