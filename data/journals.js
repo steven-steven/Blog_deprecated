@@ -6,12 +6,12 @@ export default {
       tags: ['eng', 'tech', 'reflection'],
       title: 'Dropping NFT'
     },
-    // {
-    //   date: 'Oct 24, 2021',
-    //   slug: 'thinking-in-systems',
-    //   tags: ['eng', 'nontech', 'reflection'],
-    //   title: 'Bookclub: Thinking in Systems'
-    // },
+    {
+      date: 'Oct 24, 2021',
+      slug: 'thinking-in-systems',
+      tags: ['eng', 'nontech', 'reflection'],
+      title: 'Bookclub: Thinking in Systems'
+    },
     {
       date: 'Aug 28, 2021',
       slug: 'the-design-of-everyday-things',
