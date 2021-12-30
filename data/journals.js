@@ -1,6 +1,12 @@
 export default {
   2021: [
     {
+      date: 'Dec 17, 2021',
+      slug: 'last-intern',
+      tags: ['eng', 'nontech', 'reflection'],
+      title: 'Last Intern'
+    },
+    {
       date: 'Nov 22, 2021',
       slug: 'dropping-nft',
       tags: ['eng', 'tech', 'reflection'],
