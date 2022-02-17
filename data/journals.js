@@ -1,6 +1,12 @@
 export default {
   2021: [
     {
+      date: 'Dec 18, 2021',
+      slug: 'book-team-of-teams',
+      tags: ['eng', 'nontech', 'reflection'],
+      title: 'Bookclub: Team of Teams'
+    },
+    {
       date: 'Dec 17, 2021',
       slug: 'last-intern',
       tags: ['eng', 'nontech', 'reflection'],
