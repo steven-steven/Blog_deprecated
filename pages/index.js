@@ -20,7 +20,7 @@ const Content = styled.div`
 
 const Row = styled.div`
     margin: 0 auto;
-    width: 300px;
+    width: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,7 +46,7 @@ const IndoDescription = styled.p`
     font-size: 0.8em;
 `;
 
-const loopTexts = ["PROGRAMMING", "TABLE TENNIS", "MANGA", "UKULELE", "DRAWING", "PROBLEM SOLVING", "FPV", "SHARING"]
+const loopTexts = ["CODING", "PINGPONG", "MANGA", "BOOKS", "FPV", "CLIMBING", "LEARNING"]
 
 const Home = () => (
     <Page title={'Steven - my current iteration'}>
@@ -69,12 +69,12 @@ const Home = () => (
                 <EngDescription>
                     Hi I&apos;m Steven.
                     <br />
-                    I study Computer Engineering at the University of Waterloo. Having been through 6 internships in the tech industry, I felt like a programming career has always been something I&apos;d enjoy pursuing.
-                    However, now that I&apos;m about to graduate in the upcoming 2021, it&apos;s beginning to feel surreal. What will I do in 5 years time? Those are unanswered questions but I&apos;ll find out!
+                    Programming has always been my vocation. I love tinkering, learning and going through a rabbit-hole of interesting thoughts.
+                    What will I do in 5 years time? Those are unanswered questions but I&apos;ll find out!
                     <br />
-                    I created this site as a platform for personal reflection, experiences and thoughts that I&apos;d like to share. Furthermore, by doing this, hopefully I can improve my writing over time and also helps to document many ever-changing events and thoughts.
+                    I created this site as a platform for personal reflection, summarizing books I've read, courses, hobbies, life experiences, or just random thoughts I'd like to pass on. It helps me document many ever-changing thoughts that's too computationally heavy for this unreliable RAM in my head.
                     <br />
-                    I&apos;m not entirely sure what this blog means to you reading it. It could just end up being a bunch of insignificant ramblings and terrible humor. But I hope you can get something positive out.
+                    I&apos;m not entirely sure what this blog means to you reading it. It could just end up being a bunch of insignificant ramblings, terrible humor (if there's any), and typos or grammatical errors. But I hope you can get something positive out.
                 </EngDescription>
                 <hr />
                 <IndoDescription>

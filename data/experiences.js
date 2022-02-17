@@ -1,5 +1,17 @@
 export default [
   {
+    slug: "shopify",
+    company: "Shopify",
+    title: "Software Developer",
+    date: "incoming Apr 2022"
+  },
+  {
+    slug: "shopify",
+    company: "Shopify",
+    title: "Software Engineer Intern",
+    date: "Sept-Dec 2021"
+  },
+  {
     slug: "Stackadapt",
     company: "StackAdapt",
     title: "Software Engineer Intern",
