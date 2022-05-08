@@ -1,4 +1,18 @@
 export default {
+  2022: [
+    {
+      date: 'May 7, 2022',
+      slug: 'trip-down-the-memory-lane',
+      tags: ['eng', 'nontech', 'reflection'],
+      title: 'Trip Down the Memory Lane'
+    },
+    {
+      date: 'Feb 26, 2022',
+      slug: 'book-end-of-everything',
+      tags: ['eng', 'nontech', 'reflection'],
+      title: 'Bookclub: The End of Everything'
+    },
+  ],
   2021: [
     {
       date: 'Dec 18, 2021',

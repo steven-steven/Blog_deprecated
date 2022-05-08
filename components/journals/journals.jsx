@@ -22,11 +22,20 @@ const displayEntries = (filters, journals) => {
 }
 
 const Journals = ({ filters = [] }) => {
+  const journal2022 = displayEntries(filters, journalData[2022]);
   const journal2021 = displayEntries(filters, journalData[2021]);
   const journal2020 = displayEntries(filters, journalData[2020]);
   const journal2019 = displayEntries(filters, journalData[2019]);
   return (
     <>
+      {journal2022.length > 0 && (
+        <>
+          2022
+          <ul>
+            {journal2022}
+          </ul>
+        </>
+      )}
       {journal2021.length > 0 && (
         <>
           2021
