@@ -3,5 +3,6 @@ export default [
   { value: 'eng', label: 'english' },
   { value: 'tech', label: 'technical' },
   { value: 'nontech', label: 'non-technical' },
-  { value: 'reflection', label: 'personal-reflection' }
+  { value: 'reflection', label: 'personal-reflection' },
+  { value: 'book', label: 'book-reviews' }
 ];

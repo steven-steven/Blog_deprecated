@@ -9,15 +9,21 @@ export default {
     {
       date: 'Feb 26, 2022',
       slug: 'book-end-of-everything',
-      tags: ['eng', 'nontech', 'reflection'],
+      tags: ['eng', 'nontech', 'book'],
       title: 'Bookclub: The End of Everything'
+    },
+    {
+      date: 'Jan 5, 2022',
+      slug: 'book-antifragile',
+      tags: ['eng', 'nontech', 'book'],
+      title: 'Bookclub: Antifragile'
     },
   ],
   2021: [
     {
       date: 'Dec 18, 2021',
       slug: 'book-team-of-teams',
-      tags: ['eng', 'nontech', 'reflection'],
+      tags: ['eng', 'nontech', 'book'],
       title: 'Bookclub: Team of Teams'
     },
     {
@@ -35,31 +41,31 @@ export default {
     {
       date: 'Oct 24, 2021',
       slug: 'thinking-in-systems',
-      tags: ['eng', 'nontech', 'reflection'],
+      tags: ['eng', 'nontech', 'book'],
       title: 'Bookclub: Thinking in Systems'
     },
     {
       date: 'Aug 28, 2021',
       slug: 'the-design-of-everyday-things',
-      tags: ['eng', 'nontech', 'reflection'],
+      tags: ['eng', 'nontech', 'book'],
       title: 'Bookclub: The Design of Everyday Things'
     },
     {
       date: 'Jul 25, 2021',
       slug: 'book-the-well-grounded-rubyist',
-      tags: ['eng', 'tech', 'reflection'],
+      tags: ['eng', 'tech', 'book'],
       title: 'Bookclub: The Well-Grounded Rubyist'
     },
     {
       date: 'Jun 24, 2021',
       slug: 'book-infinite-game',
-      tags: ['eng', 'nontech', 'reflection'],
+      tags: ['eng', 'nontech', 'book'],
       title: 'Bookclub: Finite and Infinite Games'
     },
     {
       date: 'May 29, 2021',
       slug: 'book-POOD',
-      tags: ['eng', 'tech', 'reflection'],
+      tags: ['eng', 'tech', 'book'],
       title: 'Bookclub: Practical Object-Oriented Design'
     },
     {
