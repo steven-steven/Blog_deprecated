@@ -7,6 +7,12 @@ export default {
       title: 'Trip Down the Memory Lane'
     },
     {
+      date: 'March 22, 2022',
+      slug: 'ocehan-ga-sabar-untuk-memberi',
+      tags: ['indo', 'nontech'],
+      title: 'Ocehan: Ga Sabar Untuk Memberi'
+    },
+    {
       date: 'Feb 26, 2022',
       slug: 'book-end-of-everything',
       tags: ['eng', 'nontech', 'book'],
