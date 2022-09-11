@@ -7,6 +7,12 @@ export default {
       title: 'Open Source Weekend'
     },
     {
+      date: 'Aug 23, 2022',
+      slug: 'book-how-to-be-perfec',
+      tags: ['eng', 'nontech', 'book'],
+      title: "Bookclub: How to be perfec"
+    },
+    {
       date: 'May 7, 2022',
       slug: 'trip-down-the-memory-lane',
       tags: ['eng', 'nontech', 'reflection'],
