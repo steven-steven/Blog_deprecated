@@ -1,6 +1,12 @@
 export default {
   2022: [
     {
+      date: 'Sept 5, 2022',
+      slug: 'opensource-weekend',
+      tags: ['eng', 'tech', 'reflection'],
+      title: 'Open Source Weekend'
+    },
+    {
       date: 'May 7, 2022',
       slug: 'trip-down-the-memory-lane',
       tags: ['eng', 'nontech', 'reflection'],
