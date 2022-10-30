@@ -1,6 +1,12 @@
 export default {
   2022: [
     {
+      date: 'Sept 28, 2022',
+      slug: 'book-permission-to-feel',
+      tags: ['eng', 'nontech', 'book'],
+      title: 'Bookclub: Permission To Feel'
+    },
+    {
       date: 'Sept 5, 2022',
       slug: 'opensource-weekend',
       tags: ['eng', 'tech', 'reflection'],
