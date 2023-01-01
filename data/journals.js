@@ -1,6 +1,12 @@
 export default {
   2022: [
     {
+      date: 'Dec 31, 2022',
+      slug: '2022-rhythm',
+      tags: ['eng', 'nontech', 'reflection'],
+      title: '2022 Rhythm'
+    },
+    {
       date: 'Sept 28, 2022',
       slug: 'book-permission-to-feel',
       tags: ['eng', 'nontech', 'book'],
