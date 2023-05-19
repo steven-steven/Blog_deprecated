@@ -1,4 +1,12 @@
 export default {
+  2023: [
+    {
+      date: 'May 4, 2023',
+      slug: 'book-ddia',
+      tags: ['eng', 'tech', 'book'],
+      title: 'Bookclub: DDIA (Designing Data Intensive Applications)'
+    },
+  ],
   2022: [
     {
       date: 'Dec 31, 2022',
