@@ -1,6 +1,12 @@
 export default {
   2023: [
     {
+      date: 'Sept 18, 2023',
+      slug: 'layoffs',
+      tags: ['eng', 'nontech', 'reflection'],
+      title: 'Layoffs'
+    },
+    {
       date: 'May 4, 2023',
       slug: 'book-ddia',
       tags: ['eng', 'tech', 'book'],
