@@ -1,6 +1,12 @@
 export default {
   2023: [
     {
+      date: 'Oct 18, 2023',
+      slug: 'book-rich-dad-poor-dad',
+      tags: ['eng', 'nontech', 'reflection'],
+      title: 'Bookclub: Rich dad poor dad'
+    },
+    {
       date: 'Oct 15, 2023',
       slug: 'book-how-to-standup-to-a-dictator',
       tags: ['eng', 'nontech', 'reflection'],
