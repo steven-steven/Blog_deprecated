@@ -1,6 +1,18 @@
 export default {
   2023: [
     {
+      date: 'Dec 31, 2023',
+      slug: '2023-reinvention',
+      tags: ['eng', 'nontech', 'reflection'],
+      title: '2023 Reinvention'
+    },
+    {
+      date: 'Nov 1, 2023',
+      slug: 'book-this-is-marketing',
+      tags: ['eng', 'nontech', 'reflection'],
+      title: 'Bookclub: This is Marketing'
+    },
+    {
       date: 'Oct 18, 2023',
       slug: 'book-rich-dad-poor-dad',
       tags: ['eng', 'nontech', 'reflection'],
