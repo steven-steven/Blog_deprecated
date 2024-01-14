@@ -22,6 +22,7 @@ const displayEntries = (filters, journals) => {
 }
 
 const Journals = ({ filters = [] }) => {
+  const journal2024 = displayEntries(filters, journalData[2024]);
   const journal2023 = displayEntries(filters, journalData[2023]);
   const journal2022 = displayEntries(filters, journalData[2022]);
   const journal2021 = displayEntries(filters, journalData[2021]);
@@ -29,6 +30,14 @@ const Journals = ({ filters = [] }) => {
   const journal2019 = displayEntries(filters, journalData[2019]);
   return (
     <>
+      {journal2024.length > 0 && (
+        <>
+          2024
+          <ul>
+            {journal2024}
+          </ul>
+        </>
+      )}
       {journal2023.length > 0 && (
         <>
           2023

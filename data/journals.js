@@ -1,4 +1,12 @@
 export default {
+  2024: [
+    {
+      date: 'Jan 15, 2024',
+      slug: 'first-time-diving-in-phuket',
+      tags: ['eng', 'nontech', 'reflection'],
+      title: 'First time diving in Phuket'
+    },
+  ],
   2023: [
     {
       date: 'Dec 31, 2023',
