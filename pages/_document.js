@@ -5,6 +5,7 @@
 import React from "react";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
+import { Helmet } from "react-helmet"
 
 class MyDocument extends Document {
     static async getInitialProps(ctx) {
@@ -36,7 +37,21 @@ class MyDocument extends Document {
     render() {
         return (
             <Html>
-                <Head />
+                <Head>
+                    <Helmet>
+                        <script
+                            src="https://www.googletagmanager.com/gtag/js?id=G-2ZQEXL84HZ"
+                            async
+                        ></script>
+                        <script>
+                            {`window.dataLayer = window.dataLayer || [];
+                            function gtag(){dataLayer.push(arguments);}
+                            gtag('js', new Date());
+
+                            gtag('config', 'G-2ZQEXL84HZ');`}
+                        </script>
+                    </Helmet>
+                </Head>
                 <body>
                     <Main />
                     <NextScript />
